@@ -1,8 +1,9 @@
 import React, {Component} from "react";
+import Echarts from "echarts";
 
 import less from "./Echarts.less";
 
-class Echarts extends Component {
+class page extends Component {
     constructor(props) {
         super(props);
 
@@ -24,7 +25,9 @@ class Echarts extends Component {
 
         return (
             <div className={less.mainPage}>
-                Echarts练习
+                <div className={less.wall}>
+                    Echarts练习
+                </div>
             </div>
         );
     }
@@ -32,10 +35,10 @@ class Echarts extends Component {
 }
 
 
-Echarts.contextTypes = {
+page.contextTypes = {
     router: React.PropTypes.object
 };
-module.exports = Echarts;
+module.exports = page;
 
 
 
