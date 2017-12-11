@@ -30,7 +30,7 @@ class page extends Component {
                 <div
                     className={less.listItem}
                     onClick={()=>{
-                        window.app_open(this,'');
+                        window.app_open(this,'/Echarts');
                     }}
                 >
                     <span>Echarts 练习</span>

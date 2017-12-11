@@ -13,10 +13,19 @@ const root = (
             <IndexRoute getComponent={
                 (nextState, cb) => {
                     require.ensure([], require => {
-                        cb(null, require("./main/body/index/Index"));
+                        cb(null, require("./main/body/index/Index.js"));
                     }, "Index");
                 }
             }/>
+            <Route
+                getComponent={
+                (nextState, cb) => {
+                   require.ensure([], require => {
+                       cb(null, require("./main/body/echarts/Echarts.js"));
+                   }, "Echarts");
+                }
+            }>
+            </Route>
         </Route>
     </Router>
 );
