@@ -1,0 +1,162 @@
+@import "../theme.less";
+.payOutBox {
+   margin: auto;
+   max-width: 1200px;
+   margin-top: 10px;
+   position: relative;
+}
+
+.toContainAllSon{
+   content: "";
+   height: 0;
+   visibility: hidden;
+   display: block;
+   clear: both;
+}
+
+.payCpmBox{
+   background-color: @content-backcolor;
+   margin: 10px 0;
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+   border: 1px rgba(0, 0, 0, 0.10) solid;
+   .top{
+      line-height: 50px;
+      height: 50px;
+      font-size: @font_size_center;
+      font-weight: bolder;
+      padding-left: 20px;
+      border-bottom: 1px solid #EDEDED;
+      color: @font-color;
+   }
+   .middle{
+      font-size: @font_size_small;
+      color: @font-light-color;
+      padding: 25px 20px 30px 20px;
+   }
+}
+
+.modalBtn{
+   width: 165px;
+   height: 35px;
+   margin: 0 8px;
+   font-size: @font_size_center;
+}
+
+.bigOrangeBtn{
+   width: 200px;
+   height: 50px;
+   font-size: @font_size_big;
+   margin-top: 11px;
+   background-color: @c_text_red;
+   border-color: @c_text_red;
+   &:hover, &:focus{
+      background-color: @c_text_red_light;
+      border-color: @c_text_red_light;
+   }
+   &:active{
+      background-color: @c_text_red_dark;
+      border-color: @c_text_red_dark;
+   }
+}
+
+.lightNorBtn{
+   width: 170px;
+   height:40px;
+   font-size: 16px;
+   margin-top:20px;
+   text-align:center;
+   background-color: #def6ff;
+   color: #00a3ff;
+   border: 1px #B0D4F7 solid;
+}
+
+.normalSizeBtn{
+   width: 145px;
+   height: 36px;
+   font-size: @font_size_center;
+}
+
+.fl{
+   float: left;
+}
+
+.fr{
+   float: right;
+}
+
+.txtCenter{
+   text-align: center;
+}
+
+//验证码的样式
+
+
+.codeSucc{
+   color: @success2-color;
+}
+
+.codeErr{
+   color: @error-color;
+}
+
+.codeUndefined{
+   opacity: 0;
+}
+
+.loading{
+   text-align: center;
+   height: 400px;
+   background-color: #fff;
+   color: @error-color;
+   line-height: 50px;
+   font-size: @font_size_big;
+   position: relative;
+}
+
+.allCenter{
+   position: absolute;
+   top:0;
+   left:0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   line-height: 20px;
+   height: 20px;
+   text-align: center;
+}
+
+//加载中的动画
+.animationGroup {
+   padding-top: 64px;
+   padding-bottom: 30px;
+   &_circle {
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      margin: 0 5px 0;
+      background-color: #29A6FF;
+      &:nth-child(1) {
+         -webkit-animation: scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08);
+         animation:         scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08);
+      }
+      &:nth-child(2) {
+         -webkit-animation: scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08);
+         animation:         scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08);
+      }
+      &:nth-child(3) {
+         -webkit-animation: scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08);
+         animation:         scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08);
+      }
+   }
+   @keyframes scale {
+      30% {
+         -webkit-transform: scale(0.3);
+         transform: scale(0.3);
+      }
+      100% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+      }
+   }
+}

@@ -1,0 +1,31 @@
+@import "../theme.less";
+@import "./PublicStyle.less";
+.payItem {
+   position: relative;
+   border: 2px solid #F1F1F1;
+   padding: 2px;
+   width: 200px;
+   height: 60px;
+   margin-right: 30px;
+   font-weight: bolder;
+   display: inline-block;
+
+   &[type=bank] {
+      display: block;
+   }
+   &:not([type]) {
+      margin-bottom: 25px;
+   }
+   &:last-child {
+      vertical-align: top;
+
+   }
+}
+
+.payItemSelect {
+   color: @font-color;
+   border: 2px solid transparent;
+   background-image: url("../pay/images/selected.png");
+   background-repeat: no-repeat;
+   background-position: center;
+}

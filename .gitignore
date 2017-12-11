@@ -1,0 +1,12 @@
+node_modules
+**/.DS_Store
+.vscode
+.history
+.idea
+runtime
+.npm
+.directory
+project
+public.zip
+public.rar
+**/npm-debug.log

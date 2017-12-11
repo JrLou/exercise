@@ -1,0 +1,42 @@
+@import "../theme.less";
+@import "./PublicStyle.less";
+.payInfo {
+   .payCpmBox;
+   &_top{
+      .top;
+   }
+   &_middle{
+
+      .middle;
+      &_msg{
+         display: inline-block;
+         padding-left: 23px;
+         font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
+         font-size: @font_size_center;
+         color: @font-dark-color;
+      }
+
+      &_priceBox{
+         font-size: @font_size_cell;
+         text-align: right;
+         &_rmb{
+            color:@font-paytitle-color;
+         }
+         &_price{
+            color:@font-paytitle-color;
+            font-size: @font_size_super_big_x;
+            font-weight: bolder;
+         }
+      }
+
+
+   }
+   &_bottom{
+      background-color: #F5F5F5;
+      line-height: 30px;
+      height: 30px;
+      padding-left: 20px;
+   }
+}
+
+
