@@ -17,7 +17,7 @@ class page extends Component {
                             <div className={less.boxS}>
                                 <div
                                     className={less.boxT}
-                                    style={{backgroundImage:`url(${require('../../../images/404.jpg')})`}}
+                                    style={{backgroundImage:`url('images/fanli.jpg')`}}
                                 >
                                     <div className={less.overlay}>
                                         <a href="#">+</a>
@@ -29,7 +29,7 @@ class page extends Component {
                             <div className={less.boxS}>
                                 <div
                                     className={less.boxT}
-                                    style={{backgroundImage:`url(${require('../../../images/404.jpg')})`}}
+                                    style={{backgroundImage:`url('images/fanli.jpg')`}}
                                     >
                                     <div className={less.overlay}>
                                         <a href="#">+</a>
@@ -41,7 +41,7 @@ class page extends Component {
                             <div className={less.boxS}>
                                 <div
                                     className={less.boxT}
-                                    style={{backgroundImage:`url(${require('../../../images/404.jpg')})`}}
+                                    style={{backgroundImage:`url('images/fanli.jpg')`}}
                                 >
                                     <div className={less.overlay}>
                                         <a href="#">+</a>
@@ -56,7 +56,7 @@ class page extends Component {
                             <div className={less.boxS}>
                                 <div
                                     className={less.boxT}
-                                    style={{backgroundImage:`url(${require('../../../images/404.jpg')})`}}
+                                    style={{backgroundImage:`url('images/fanli.jpg')`}}
                                 >
                                     <div className={less.overlay}>
                                         <a href="#">+</a>
@@ -68,7 +68,7 @@ class page extends Component {
                             <div className={less.boxS}>
                                 <div
                                     className={less.boxT}
-                                    style={{backgroundImage:`url(${require('../../../images/404.jpg')})`}}
+                                    style={{backgroundImage:`url('images/fanli.jpg')`}}
                                 >
                                     <div className={less.overlay}>
                                         <a href="#">+</a>

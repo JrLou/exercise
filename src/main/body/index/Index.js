@@ -33,7 +33,7 @@ class page extends Component {
                         window.app_open(this,'/Echarts');
                     }}
                 >
-                    <span>Echarts 练习</span>
+                    <span>Echarts-gl 练习</span>
                 </div>
                 <div
                     className={less.listItem}

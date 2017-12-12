@@ -32,6 +32,7 @@ class page extends Component {
 
 
                 <div className={less.another}>
+                    <div>使用自定义的组件：</div>
                     <Hexagon
                         borderLength={'135px'}
                         borderStyle={'1px solid #ff00ff'}
