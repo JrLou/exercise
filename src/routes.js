@@ -20,6 +20,26 @@ const root = (
                 }
             }>
         </Route>
+        <Route
+            path="/Hexagon"
+            getComponent={
+                (nextState, cb) => {
+                    require.ensure([], require => {
+                        cb(null, require("./main/body/hexagon/Hexagon.js"));
+                    }, "Hexagon");
+                }
+            }>
+        </Route>
+        <Route
+            path="/Hexagon02"
+            getComponent={
+                (nextState, cb) => {
+                    require.ensure([], require => {
+                        cb(null, require("./main/body/hexagon/Hexagon02.js"));
+                    }, "Hexagon02");
+                }
+            }>
+        </Route>
     </Router>
 );
 module.exports = root;

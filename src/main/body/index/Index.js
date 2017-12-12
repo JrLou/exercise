@@ -35,6 +35,22 @@ class page extends Component {
                 >
                     <span>Echarts 练习</span>
                 </div>
+                <div
+                    className={less.listItem}
+                    onClick={()=>{
+                        window.app_open(this,'/Hexagon');
+                    }}
+                >
+                    <span>DIV模拟六边形</span>
+                </div>
+                <div
+                    className={less.listItem}
+                    onClick={()=>{
+                        window.app_open(this,'/Hexagon02');
+                    }}
+                >
+                    <span>六边形 自定义组件</span>
+                </div>
             </div>
         );
     }
