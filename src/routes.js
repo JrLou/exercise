@@ -11,12 +11,12 @@ const root = (
         >
         </Route>
         <Route
-            path="/Echarts"
+            path="/Echarts-gl"
             getComponent={
                 (nextState, cb) => {
                     require.ensure([], require => {
-                        cb(null, require("./main/body/echarts/Echarts.js"));
-                    }, "Echarts");
+                        cb(null, require("./main/body/echarts-gl/Echarts.js"));
+                    }, "Echarts-gl");
                 }
             }>
         </Route>
@@ -37,6 +37,26 @@ const root = (
                     require.ensure([], require => {
                         cb(null, require("./main/body/hexagon/Hexagon02.js"));
                     }, "Hexagon02");
+                }
+            }>
+        </Route>
+        <Route
+            path="/Echarts-pie"
+            getComponent={
+                (nextState, cb) => {
+                    require.ensure([], require => {
+                        cb(null, require("./main/body/echarts/echarts-pie/Pie.js"));
+                    }, "Echarts-pie");
+                }
+            }>
+        </Route>
+        <Route
+            path="/Rank"
+            getComponent={
+                (nextState, cb) => {
+                    require.ensure([], require => {
+                        cb(null, require("./main/body/rank/Rank.js"));
+                    }, "Rank");
                 }
             }>
         </Route>

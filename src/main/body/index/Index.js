@@ -6,9 +6,7 @@ class page extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-
-        };
+        this.state = {};
     }
 
     componentDidMount() {
@@ -29,27 +27,43 @@ class page extends Component {
                 </div>
                 <div
                     className={less.listItem}
-                    onClick={()=>{
-                        window.app_open(this,'/Echarts');
+                    onClick={() => {
+                        window.app_open(this, '/Echarts-gl');
                     }}
                 >
-                    <span>Echarts-gl 练习</span>
+                    <span>1.Echarts-gl 练习</span>
                 </div>
                 <div
                     className={less.listItem}
-                    onClick={()=>{
-                        window.app_open(this,'/Hexagon');
+                    onClick={() => {
+                        window.app_open(this, '/Hexagon');
                     }}
                 >
-                    <span>DIV模拟六边形</span>
+                    <span>2.DIV模拟六边形</span>
                 </div>
                 <div
                     className={less.listItem}
-                    onClick={()=>{
-                        window.app_open(this,'/Hexagon02');
+                    onClick={() => {
+                        window.app_open(this, '/Hexagon02');
                     }}
                 >
-                    <span>六边形 自定义组件</span>
+                    <span>3.六边形 自定义组件</span>
+                </div>
+                <div
+                    className={less.listItem}
+                    onClick={() => {
+                        window.app_open(this, '/Echarts-pie');
+                    }}
+                >
+                    <span>4.Echarts-pie 练习</span>
+                </div>
+                <div
+                    className={less.listItem}
+                    onClick={() => {
+                        window.app_open(this, '/Rank');
+                    }}
+                >
+                    <span>5.城市排名 Demo</span>
                 </div>
             </div>
         );
