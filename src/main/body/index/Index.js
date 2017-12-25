@@ -65,6 +65,14 @@ class page extends Component {
                 >
                     <span>5.城市排名 Demo</span>
                 </div>
+                <div
+                    className={less.listItem}
+                    onClick={() => {
+                        window.app_open(this, '/ThreeJS');
+                    }}
+                >
+                    <span>6.ThreeJS练习</span>
+                </div>
             </div>
         );
     }
