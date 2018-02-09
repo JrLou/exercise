@@ -87,7 +87,9 @@
     "morgan": "^1.7.0",
     "qiniu": "^7.1.1",
     "request": "^2.83.0",
-    "serve-favicon": "^2.3.2"
+    "serve-favicon": "^2.3.2",
+    "stats": "^1.0.0",
+    "three": "^0.89.0"
   },
   "author": {
     "name": "oliver"

@@ -22,6 +22,22 @@ class page extends Component{
                 >
                     <span>1.demo01</span>
                 </div>
+                <div
+                    className={less.itemStyle}
+                    onClick={() => {
+                        window.app_open(this, '/demo02');
+                    }}
+                >
+                    <span>2.demo02</span>
+                </div>
+                <div
+                    className={less.itemStyle}
+                    onClick={() => {
+                        window.app_open(this, '/demo03');
+                    }}
+                >
+                    <span>3.demo03</span>
+                </div>
             </div>
         );
     }

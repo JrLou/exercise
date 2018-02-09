@@ -80,6 +80,26 @@ const root = (
                 }
             }>
         </Route>
+        <Route
+            path="/demo02"
+            getComponent={
+                (nextState, cb) => {
+                    require.ensure([], require => {
+                        cb(null, require("./main/body/threejs/demo02.js"));
+                    }, "demo02");
+                }
+            }>
+        </Route>
+        <Route
+            path="/demo03"
+            getComponent={
+                (nextState, cb) => {
+                    require.ensure([], require => {
+                        cb(null, require("./main/body/threejs/demo03.js"));
+                    }, "demo03");
+                }
+            }>
+        </Route>
     </Router>
 );
 module.exports = root;

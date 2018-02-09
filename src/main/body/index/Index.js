@@ -73,6 +73,14 @@ class page extends Component {
                 >
                     <span>6.ThreeJS练习</span>
                 </div>
+                <div
+                    className={less.listItem}
+                    onClick={() => {
+                        window.app_open(this, '/AntdMobile');
+                    }}
+                >
+                    <span>7.Antd-Mobile练习</span>
+                </div>
             </div>
         );
     }
