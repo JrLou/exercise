@@ -1,44 +1,16 @@
 import React, {Component} from 'react';
 import less from './Rank.less';
-import CityRank from './component/Rank.js';
+import { Form, Row, Col, Input, Button, Icon } from 'antd';
+const FormItem = Form.Item;
 
-class page extends Component{
+class AdvancedSearchForm extends Component{
     constructor(props){
         super(props);
-        this.state = {};
+        this.state = {
+            expand: false,
+            test:111,
+        };
 
-        this.rankData = [
-            {
-                index:1,
-                cityName:'上海',
-                hot:99,
-            },
-            {
-                index:2,
-                cityName:'北京',
-                hot:96,
-            },
-            {
-                index:3,
-                cityName:'广州',
-                hot:92,
-            },
-            {
-                index:4,
-                cityName:'成都',
-                hot:90,
-            },
-            {
-                index:5,
-                cityName:'深圳',
-                hot:85,
-            },
-            {
-                index:6,
-                cityName:'杭州',
-                hot:81,
-            },
-        ];
     }
 
     componentDidMount() {
@@ -47,17 +19,63 @@ class page extends Component{
 
 
     render(){
-        return(
-            <div className={less.mainPage}>
-                <CityRank
-                    data={this.rankData}
-                />
-            </div>
+        return (
+            <Form
+                className="ant-advanced-search-form"
+                onSubmit={(e)=>{this.handleSearch(e);}}
+            >
+                <Row gutter={24}>{this.getFields()}</Row>
+                <Row>
+                    <Col span={24} style={{ textAlign: 'right' }}>
+                        <Button type="primary" htmlType="submit">Search</Button>
+                        <Button style={{ marginLeft: 8 }} onClick={()=>{this.handleReset();}}>
+                            Clear
+                        </Button>
+                        <a style={{ marginLeft: 8, fontSize: 12 }} onClick={()=>{this.toggle();}}>
+                            Collapse <Icon type={this.state.expand ? 'up' : 'down'} />
+                        </a>
+                    </Col>
+                </Row>
+            </Form>
         );
+    }
+
+    handleSearch(e){
+        e.preventDefault();
+        this.props.form.validateFields((err, values) => {
+            console.log('Received values of form: ', values);
+        });
+    }
+
+    handleReset(){
+        this.props.form.resetFields();
+    }
+
+    toggle(){
+        const { expand } = this.state;
+        this.setState({ expand: !expand });
+    }
+
+    // To generate mock Form.Item
+    getFields(){
+        const count = this.state.expand ? 10 : 6;
+        const { getFieldDecorator } = this.props.form;
+        const children = [];
+        for (let i = 0; i < 10; i++) {
+            children.push(
+                <Col span={8} key={i} style={{ display: i < count ? 'block' : 'none' }}>
+                    <FormItem label={`Field ${i}`}>
+                        {getFieldDecorator(`field-${i}`)(
+                            <Input placeholder="placeholder" />
+                        )}
+                    </FormItem>
+                </Col>
+            );
+        }
+        return children;
     }
 }
 
-page.contextTypes = {
-    router: React.PropTypes.object
-};
-module.exports = page;
+const WrappedAdvancedSearchForm = Form.create()(AdvancedSearchForm);
+
+module.exports = WrappedAdvancedSearchForm;

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="下载">
+    <meta name="description" content="下载">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下载</title>
+    <script>
+        //适配不同屏幕
+        !function (e) {
+            function t(n) {
+                if (i[n]) return i[n].exports;
+                var r = i[n] = {exports: {}, id: n, loaded: !1};
+                return e[n].call(r.exports, r, r.exports, t), r.loaded = !0, r.exports
+            }
+
+            var i = {};
+            return t.m = e, t.c = i, t.p = "", t(0)
+        }([function (e, t) {
+            "use strict";
+            Object.defineProperty(t, "__esModule", {value: !0});
+            var i = window;
+            t["default"] = i.vl = function (e, t) {
+                var n = e || 100, r = t || 750, a = i.document, d = navigator.userAgent,
+                    o = d.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i), l = d.match(/U3\/((\d+|\.){5,})/i),
+                    s = l && parseInt(l[1].split(".").join(""), 10) >= 80, u = a.documentElement, c = 1;
+                if (o && o[1] > 534 || s) {
+                    u.style.fontSize = n + "px";
+                    var p = a.createElement("div");
+                    p.setAttribute("style", "width: 1rem;display:none"), u.appendChild(p);
+                    var m = i.getComputedStyle(p).width;
+                    if (u.removeChild(p), m !== u.style.fontSize) {
+                        var v = parseInt(m, 10);
+                        c = 100 / v
+                    }
+                }
+                var f = a.querySelector('meta[name="viewport"]');
+                f || (f = a.createElement("meta"), f.setAttribute("name", "viewport"), a.head.appendChild(f)), f.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1");
+                var h = function () {
+                    u.style.fontSize = n / r * u.clientWidth * c + "px";
+                };
+                h(), i.addEventListener("resize", h)
+            }, e.exports = t["default"]
+        }]);
+        vl(75, 750);
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            vertical-align: baseline;
+            background: transparent;
+            font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif !important;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+        }
+
+        .root {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            background-image: url('/download/image/bg.jpeg');
+            /*background-color: #6fffab;*/
+            font-size: 0.45rem;
+            color: #fff;
+        }
+        .name{
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .head {
+            background-color: rgba(0, 0, 0, .3);
+            padding: 0.3rem 0;
+        }
+
+        .icon{
+            box-sizing: border-box;
+            width: 1.7rem;
+            height: 1.7rem;
+            background-color: #f3edff;
+            font-size: 0.56rem;
+            border-radius: 5%;
+            margin: 0 auto;
+            border: 2px solid #fff;
+        }
+
+        .desc {
+            color: #fff;
+            font-size: 0.45rem;
+            text-align: center;
+
+        }
+
+        .version {
+            opacity: .7;
+            font-size: 0.3rem;
+        }
+
+        .content {
+            position: absolute;
+            top: 3rem;
+            bottom: 0;
+            width: 100%;
+            /*background-color: rgba(255,255,255,.3);*/
+            margin: 0;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 0.5rem;
+        }
+
+        .swiper-container {
+            height: 100%;
+        }
+
+        .swiper-slide {
+            position: relative;
+        }
+
+        .bg01, .bg02, .bg03 {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('/download/image/banner01.jpeg');
+            background-size: 100% 100%;
+        }
+
+        .bg02 {
+            background-image: url('/download/image/banner02.jpeg');
+        }
+
+        .bg03 {
+            background-image: url('/download/image/banner03.jpeg');
+        }
+
+        .swiper-button-prev {
+            background-image: url('/download/image/swiper_button.png');
+            background-size: auto 100%;
+            background-position: 0 0;
+        }
+
+        .swiper-button-next {
+            background-image: url('/download/image/swiper_button.png');
+            background-size: auto 100%;
+            background-position: 100% 0;
+        }
+
+        .title {
+            position: absolute;
+            top: 0.8rem;
+            left: 0.8rem;
+            font-weight: bold;
+        }
+
+        .detail {
+            box-sizing: border-box;
+            position: absolute;
+            padding: 0.5rem;
+            top: 2rem;
+            text-indent: 0.9rem;
+        }
+
+        .btnBox {
+            position: fixed;
+            bottom: 1rem;
+            width: 100%;
+            text-align: center;
+            z-index: 999;
+        }
+
+        .android, .ios {
+            background-image: url('/download/image/WX_btn_android.png');
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 4rem;
+            height: 1.3rem;
+            margin: 0 0.2rem;
+            background-color: rgba(0, 0, 0, .45);
+            border-radius: 0.17rem;
+        }
+
+        .ios {
+            background-image: url('/download/image/WX_btn_ios.png');
+        }
+
+    </style>
+</head>
+<body class="root">
+<div id="root" class="root">
+    <div class='name'>APP的名字/公司的名字</div>
+    <div class='head'>
+        <div class='icon'>
+            app图标
+        </div>
+        <div class='desc'>
+            <div>APP名字</div>
+            <div class='version'>版本号:v1.0</div>
+        </div>
+    </div>
+    <div class='content'>
+        <div class='swiper-container'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class='bg01'></div>
+                    <div class='title'>标题一</div>
+                    <div class='detail'>介绍内容(绝对定位，可更改样式移动位置)</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class='bg02'></div>
+                    <div class='title'>标题二</div>
+                    <div class='detail'>介绍内容</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class='bg03'></div>
+                    <div class='title'>标题三</div>
+                    <div class='detail'>介绍内容</div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <!--<div class="swiper-pagination"></div>-->
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class='btnBox'>
+        <a class="android" href='http://www.baidu.com'></a>
+        <a class="ios" href='http://www.baidu.com'></a>
+    </div>
+</div>
+
+</body>
+
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+        effect: 'coverflow',
+        setWrapperSize: true,
+        speed: 600,
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    })
+</script>
+</html>
