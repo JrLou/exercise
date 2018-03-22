@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="卸载软件">
+    <meta name="description" content="卸载软件">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>卸载软件</title>
+    <script>
+        //适配不同屏幕
+        !function (e) {
+            function t(n) {
+                if (i[n]) return i[n].exports;
+                var r = i[n] = {exports: {}, id: n, loaded: !1};
+                return e[n].call(r.exports, r, r.exports, t), r.loaded = !0, r.exports
+            }
+
+            var i = {};
+            return t.m = e, t.c = i, t.p = "", t(0)
+        }([function (e, t) {
+            "use strict";
+            Object.defineProperty(t, "__esModule", {value: !0});
+            var i = window;
+            t["default"] = i.vl = function (e, t) {
+                var n = e || 100, r = t || 750, a = i.document, d = navigator.userAgent,
+                    o = d.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i), l = d.match(/U3\/((\d+|\.){5,})/i),
+                    s = l && parseInt(l[1].split(".").join(""), 10) >= 80, u = a.documentElement, c = 1;
+                if (o && o[1] > 534 || s) {
+                    u.style.fontSize = n + "px";
+                    var p = a.createElement("div");
+                    p.setAttribute("style", "width: 1rem;display:none"), u.appendChild(p);
+                    var m = i.getComputedStyle(p).width;
+                    if (u.removeChild(p), m !== u.style.fontSize) {
+                        var v = parseInt(m, 10);
+                        c = 100 / v
+                    }
+                }
+                var f = a.querySelector('meta[name="viewport"]');
+                f || (f = a.createElement("meta"), f.setAttribute("name", "viewport"), a.head.appendChild(f)), f.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1");
+                var h = function () {
+                    u.style.fontSize = n / r * u.clientWidth * c + "px";
+                };
+                h(), i.addEventListener("resize", h)
+            }, e.exports = t["default"]
+        }]);
+        vl(75, 750);
+    </script>
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            vertical-align: baseline;
+            background: transparent;
+            font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif !important;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+        }
+
+        .root {
+            position: relative;
+            background-color: #fffcf6;
+            font-size: 0.45rem;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 0.3rem;
+        }
+        .titleH1{
+            font-size: 0.6rem;
+            text-align: center;
+            padding: 0.25rem 0;
+            letter-spacing: 0.06rem;
+        }
+        .titleH2{
+            font-size: 0.5rem;
+            padding: 0.15rem 0;
+            letter-spacing: 0.04rem;
+        }
+        .desc{
+            font-size: 0.4rem;
+            padding: 0.15rem 0;
+        }
+        .imgStyle{
+            display: block;
+            margin: 0 auto 0.5rem;
+            width: 98%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body class="root">
+<div id="root" class="root">
+    <div class='titleH1'>IOS卸载应用教程</div>
+    <div>
+        <div class='titleH2'>方法一、快捷方法</div>
+        <div class='desc'>1.长按软件的图标不放，待图标左上角出现×号时松开，如下图...</div>
+        <img class='imgStyle' src="/uninstall/image/ios_step01.jpg" alt="步骤1">
+        <div class='desc'>2.接着点击该左上角的×号，这样系统就会提示我们是否要删除该应用，如果确认是要卸载，那么选择右侧的"删除"即可。</div>
+        <img class='imgStyle' src="/uninstall/image/ios_step02.jpg" alt="步骤2">
+    </div>
+    <div>
+        <div class='titleH2'>方法二、常规方法</div>
+        <div class='desc'>1.首先，打开手机，在手机自带的程序当中，也就是按home键的那一页中，找到【设置】图标，点击进入。</div>
+        <img class='imgStyle' src="/uninstall/image/ios_step03.jpg" alt="步骤1">
+        <div class='desc'>2.在【设置】选项的菜单中，找到下一级选项【通用】，这个选项就像是安卓手机里边的手机管理功能。</div>
+        <img class='imgStyle' src="/uninstall/image/ios_step04.jpg" alt="步骤2">
+        <div class='desc'>3.在【通用】选项中，找到【用量】选项。苹果手机无法接入外带的存储卡，这个选项类似于电脑硬盘的功能。</div>
+        <img class='imgStyle' src="/uninstall/image/ios_step05.jpg" alt="步骤2">
+        <div class='desc'>4.进入【用量】之后，可以看到手机里边安装的软件，你就把它看成是电脑的磁盘就可以很好的理解，每个程序都会占用手机空间，显示占用了多少用量。</div>
+        <img class='imgStyle' src="/uninstall/image/ios_step06.jpg" alt="步骤2">
+        <div class='desc'>5.选择一个你想要删除的程序，点击进入如下图所示的页面，可以看到【删除应用程序】的选项，同时会显示这个程序占用空间。</div>
+        <img class='imgStyle' src="/uninstall/image/ios_step07.jpg" alt="步骤2">
+        <div class='desc'>6.点击删除按钮，会提示你会一起删除该程序导致的临时文件和数据，所以说这种删除程序的方法是彻底的。</div>
+        <img class='imgStyle' src="/uninstall/image/ios_step08.jpg" alt="步骤2">
+    </div>
+    <div class="titleH1">卸载完成！</div>
+</div>
+
+</body>
+</html>

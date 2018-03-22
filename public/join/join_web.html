@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="加盟">
+    <meta name="description" content="加盟">
+    <title>加盟</title>
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            vertical-align: baseline;
+            background: transparent;
+            font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif !important;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+        }
+
+        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+            /* WebKit browsers */
+            color: rgba(0, 0, 0, .3);
+            text-shadow: none;
+        }
+
+        input:-moz-placeholder, textarea:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: rgba(0, 0, 0, .3);
+            text-shadow: none;
+        }
+
+        input::-moz-placeholder, textarea::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: rgba(0, 0, 0, .3);
+            text-shadow: none;
+        }
+
+        input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+            /* Internet Explorer 10+ */
+            color: rgba(0, 0, 0, .3);
+            text-shadow: none;
+        }
+
+        div {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            min-width: 800px;
+            min-height: 600px;
+        }
+
+        .videoBG {
+            width: 100%;
+            height: 100%;
+            /*object-fit: fill;*/
+            object-fit: cover;
+        }
+
+        .imgBG {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/join/image/bg.jpg');
+            background-size: 100% 100%;
+        }
+
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content,.joinSuccess,.joinFailure {
+            width: 600px;
+            height: 700px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*background-color: rgba(150,200,200,.5);*/
+            background-color: rgba(225, 225, 225, .5);
+            border: 2px solid rgba(255, 255, 255, .5);
+            border-radius: 6px;
+            box-shadow: 0 0 30px 1px rgba(255, 255, 255, .5);
+            padding: 0 10px;
+            letter-spacing: 5px;
+            visibility: visible;
+        }
+        .joinSuccess{
+            width: 400px;
+            height: 100px;
+            background-color: rgba(74, 209, 140, 0.3);
+            visibility: hidden;
+        }
+        .joinFailure{
+            width: 400px;
+            height: 300px;
+            visibility: hidden;
+            background-color: rgba(229, 32, 48, 0.3);
+        }
+
+        .title {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px 0;
+            color: #fff;
+            text-shadow: 3px 3px 5px #000;
+        }
+
+        .box {
+            margin: 10px 0;
+        }
+
+        .label, .label02 {
+            display: inline-block;
+            height: 35px;
+            width: 230px;
+            color: #fff;
+            font-size: 22px;
+            text-align: right;
+            text-shadow: 2px 2px 3px #000;
+            cursor: pointer;
+        }
+
+        .label02 {
+            width: 400px;
+            text-align: left;
+        }
+
+        .label:before, .label02:before {
+            content: '*';
+            display: inline-block;
+            color: #e4393c;
+            text-shadow: none;
+        }
+
+        .inputStyle, .inputStyle02 {
+            display: inline-block;
+            height: 35px;
+            width: 300px;
+            border-radius: 3px;
+            background-color: rgba(255, 255, 255, .5);
+            outline: none;
+            border: 1px solid #fff;
+            font-size: 20px;
+            line-height: 35px;
+            color: #000;
+            /*text-shadow: 2px 2px 3px #000;*/
+            padding: 0 5px;
+            letter-spacing: 1px;
+        }
+
+        .inputStyle02 {
+            width: 520px;
+            height: 200px;
+            resize: none;
+            margin-left: 20px;
+        }
+
+        .submitBtn {
+            width: 300px;
+            height: 45px;
+            border: 1px solid #fff;
+            text-align: center;
+            letter-spacing: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 45px;
+            color: #787878;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 40px auto 0;
+            background-color: rgba(255, 255, 255, .5);
+            transition: all 0.3s;
+        }
+
+        .submitBtn:hover {
+            color: #0d8ff5;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body>
+<video
+        class='videoBG'
+        src="/join/video/bg.mp4"
+        autoplay
+        loop
+        muted
+        poster='/join/image/bg.jpg'
+>
+    <div class='imgBG'></div>
+</video>
+<div class='container'>
+    <div class='content'>
+        <div class='title'>申请加盟信息</div>
+        <div>
+            <div class='box'>
+                <label class='label' for="name">姓名：</label>
+                <input class='inputStyle' type="text" id='name' maxlength='10' placeholder="请输入中文或英文">
+            </div>
+            <div class='box'>
+                <label class='label' for="idCard">身份证号：</label>
+                <input class='inputStyle' type="text" id='idCard' maxlength='18' placeholder="请输入您的身份证号码">
+            </div>
+            <div class='box'>
+                <label class='label' for="phone">手机号：</label>
+                <input class='inputStyle' type="phone" id='phone' maxlength='11' placeholder="请输入您的手机号码">
+            </div>
+            <div class='box'>
+                <label class='label' for="zhifubao">收款支付宝账号：</label>
+                <input class='inputStyle' type="text" id='zhifubao' maxlength='50' placeholder="请输入支付宝账号">
+            </div>
+            <div class='box'>
+                <label class='label' for="mail">账户邮箱：</label>
+                <input class='inputStyle' type="text" id='mail' maxlength='50' placeholder="请填写您的邮箱">
+            </div>
+            <div class='box'>
+                <label class='label02' for="spread">你将如何推销我们:</label>
+                <textarea class='inputStyle02' name="" id="spread" maxlength="200"
+                          placeholder="不超过250个字符..."></textarea>
+            </div>
+
+        </div>
+        <div class='submitBtn' onclick="submitMsg()">申请</div>
+    </div>
+    <div class='joinSuccess'>
+        <div class='title'>申请加盟成功！</div>
+    </div>
+    <div class='joinFailure'>
+        <div class='feedback'>
+            <div class='title'>请求失败：</div>
+            <div class=''>提示信息</div>
+            <div class=''>重新尝试</div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function submitMsg(){
+        alert('请求接口...');
+        showSuccess();
+//        showFailure();
+    }
+
+    function showSuccess(){
+        document.getElementsByClassName('joinSuccess')[0].style.visibility = 'visible';
+        document.getElementsByClassName('content')[0].style.visibility = 'hidden';
+    }
+    function showFailure() {
+        document.getElementsByClassName('joinFailure')[0].style.visibility = 'visible';
+        document.getElementsByClassName('content')[0].style.visibility = 'hidden';
+    }
+</script>
+</html>
