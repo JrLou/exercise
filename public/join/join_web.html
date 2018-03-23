@@ -98,7 +98,7 @@
             height: 100%;
         }
 
-        .content,.joinSuccess,.joinFailure {
+        .content, .joinSuccess, .joinFailure {
             width: 600px;
             height: 700px;
             position: absolute;
@@ -114,16 +114,19 @@
             letter-spacing: 5px;
             visibility: visible;
         }
-        .joinSuccess{
+
+        .joinSuccess {
             width: 400px;
             height: 100px;
             background-color: rgba(74, 209, 140, 0.3);
             visibility: hidden;
         }
-        .joinFailure{
+
+        .joinFailure {
             width: 400px;
             height: 300px;
             visibility: hidden;
+            /*visibility: visible;*/
             background-color: rgba(229, 32, 48, 0.3);
         }
 
@@ -152,7 +155,7 @@
         }
 
         .label02 {
-            width: 400px;
+            width: 250px;
             text-align: left;
         }
 
@@ -166,7 +169,7 @@
         .inputStyle, .inputStyle02 {
             display: inline-block;
             height: 35px;
-            width: 300px;
+            width: 280px;
             border-radius: 3px;
             background-color: rgba(255, 255, 255, .5);
             outline: none;
@@ -180,13 +183,24 @@
         }
 
         .inputStyle02 {
-            width: 520px;
+            width: 480px;
             height: 200px;
             resize: none;
-            margin-left: 20px;
+            margin-left: 40px;
         }
 
-        .submitBtn {
+        .errorIcon {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-image: url('/join/image/error.png');
+            background-size: 100% 100%;
+            cursor: help;
+            margin-bottom: -5px;
+            visibility: hidden;
+        }
+
+        .submitBtn,#tryAgin {
             width: 300px;
             height: 45px;
             border: 1px solid #fff;
@@ -203,9 +217,18 @@
             transition: all 0.3s;
         }
 
-        .submitBtn:hover {
+        .submitBtn:hover,#tryAgin:hover {
             color: #0d8ff5;
             background-color: rgba(255, 255, 255, 0.9);
+        }
+        #errorMsg{
+            text-align: center;
+            font-size: 26px;
+            color: #fff;
+            height: 100px;
+        }
+        #tryAgin{
+            width: 260px;
         }
     </style>
 </head>
@@ -226,28 +249,81 @@
         <div>
             <div class='box'>
                 <label class='label' for="name">姓名：</label>
-                <input class='inputStyle' type="text" id='name' maxlength='10' placeholder="请输入中文或英文">
+                <input
+                        class='inputStyle'
+                        type="text"
+                        id='name'
+                        maxlength='15'
+                        placeholder="仅支持中文或英文"
+                        onfocus="inputSuccess('nameErr')"
+                        onblur="verVailue('name','nameErr',/(^[a-zA-Z\u4e00-\u9fa5 ]{1,15})$/)"
+                >
+                <span id='nameErr' class='errorIcon' title='格式不正确'></span>
             </div>
             <div class='box'>
                 <label class='label' for="idCard">身份证号：</label>
-                <input class='inputStyle' type="text" id='idCard' maxlength='18' placeholder="请输入您的身份证号码">
+                <input
+                        class='inputStyle'
+                        type="text"
+                        id='idCard'
+                        maxlength='18'
+                        placeholder="请输入您的身份证号码"
+                        onfocus="inputSuccess('idErr')"
+                        onblur="verVailue('idCard','idErr',/(^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$)|(^[1-9]\d{5}\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{2}$)/)"
+                >
+                <span id='idErr' class='errorIcon' title='格式不正确'></span>
             </div>
             <div class='box'>
                 <label class='label' for="phone">手机号：</label>
-                <input class='inputStyle' type="phone" id='phone' maxlength='11' placeholder="请输入您的手机号码">
+                <input
+                        class='inputStyle'
+                        type="phone"
+                        id='phone'
+                        maxlength='11'
+                        placeholder="请输入您的手机号码"
+                        onfocus="inputSuccess('phoneErr')"
+                        onblur="verVailue('phone','phoneErr',/^\d{11}$/)"
+                >
+                <span id='phoneErr' class='errorIcon' title='格式不正确'></span>
             </div>
             <div class='box'>
                 <label class='label' for="zhifubao">收款支付宝账号：</label>
-                <input class='inputStyle' type="text" id='zhifubao' maxlength='50' placeholder="请输入支付宝账号">
+                <input
+                        class='inputStyle'
+                        type="text"
+                        id='zhifubao'
+                        maxlength='50'
+                        placeholder="请输入支付宝账号"
+                        onfocus="inputSuccess('zhifubaoErr')"
+                        onblur="verVailue('zhifubao','zhifubaoErr',/\S+$/)"
+                >
+                <span id='zhifubaoErr' class='errorIcon' title='格式不正确'></span>
             </div>
             <div class='box'>
                 <label class='label' for="mail">账户邮箱：</label>
-                <input class='inputStyle' type="text" id='mail' maxlength='50' placeholder="请填写您的邮箱">
+                <input
+                        class='inputStyle'
+                        type="text"
+                        id='mail'
+                        maxlength='50'
+                        placeholder="请填写您的邮箱"
+                        onfocus="inputSuccess('mailErr')"
+                        onblur="verVailue('mail','mailErr',/\S+$/)"
+                >
+                <span id='mailErr' class='errorIcon' title='格式不正确'></span>
             </div>
             <div class='box'>
                 <label class='label02' for="spread">你将如何推销我们:</label>
-                <textarea class='inputStyle02' name="" id="spread" maxlength="200"
-                          placeholder="不超过250个字符..."></textarea>
+                <span id='spreadErr' class='errorIcon' title='不能为空'></span>
+                <textarea
+                        class='inputStyle02'
+                        name="spread"
+                        id="spread"
+                        maxlength="200"
+                        placeholder="不超过250个字符..."
+                        onfocus="inputSuccess('spreadErr')"
+                        onblur="verVailue('spread','spreadErr',/\S+$/)"
+                ></textarea>
             </div>
 
         </div>
@@ -259,26 +335,154 @@
     <div class='joinFailure'>
         <div class='feedback'>
             <div class='title'>请求失败：</div>
-            <div class=''>提示信息</div>
-            <div class=''>重新尝试</div>
+            <div id='errorMsg'>提示信息</div>
+            <div id='tryAgin' onclick="showForm()">重新尝试</div>
         </div>
     </div>
 </div>
 </body>
 <script>
-    function submitMsg(){
-        alert('请求接口...');
-        showSuccess();
-//        showFailure();
+    function submitMsg() {
+        var name = verVailue('name', 'nameErr', /(^[a-zA-Z\u4e00-\u9fa5 ]{1,15})$/);
+        var idCard = verVailue('idCard', 'idErr', /(^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$)|(^[1-9]\d{5}\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{2}$)/);
+        var mobile = verVailue('phone', 'phoneErr', /^\d{11}$/);
+        var aliaccount = verVailue('zhifubao', 'zhifubaoErr', /\S+$/);
+        var email = verVailue('mail', 'mailErr', /\S+$/);
+        var descs = verVailue('spread', 'spreadErr', /\S+$/);
+
+        if (name && idCard && mobile && aliaccount && email && descs) {
+            alert('请求接口...');
+            ajax({
+                url: "http://127.0.0.1:6021/index/applySeller",              //请求地址
+                type: "POST",                                                //请求方式
+                data: {
+                    name: name,
+                    idCard: idCard,
+                    mobile: mobile,
+                    aliaccount: aliaccount,
+                    email: email,
+                    descs: descs,
+                },                                                          //请求参数
+                dataType: "json",
+                success: function (response, xml) {
+                    // 此处放成功后执行的代码
+                    console.log(response);
+                    showSuccess();
+                },
+                fail: function (status) {
+                    // 此处放失败后执行的代码
+                    console.log(status);
+                    showFailure('请求故障');
+                }
+            });
+
+        } else {
+            return;
+        }
+
     }
 
-    function showSuccess(){
+    //显示申请成功的页面
+    function showSuccess() {
         document.getElementsByClassName('joinSuccess')[0].style.visibility = 'visible';
         document.getElementsByClassName('content')[0].style.visibility = 'hidden';
     }
-    function showFailure() {
+
+    //显示申请失败的页面
+    function showFailure(test) {
         document.getElementsByClassName('joinFailure')[0].style.visibility = 'visible';
         document.getElementsByClassName('content')[0].style.visibility = 'hidden';
+        document.getElementById('errorMsg').innerText = test;
+    }
+
+    //重新显示填表页面
+    function showForm(){
+        document.getElementsByClassName('joinFailure')[0].style.visibility = 'hidden';
+        document.getElementsByClassName('content')[0].style.visibility = 'visible';
+        document.getElementById('errorMsg').innerText = '';
+    }
+
+    //显示某个输入框的错误图标
+    function inputError(id) {
+        if (!id) {
+            return;
+        }
+        document.getElementById(id).style.visibility = 'visible';
+    }
+
+    //隐藏某个输入框的错误图标
+    function inputSuccess(id) {
+        if (!id) {
+            return;
+        }
+        document.getElementById(id).style.visibility = 'hidden';
+    }
+
+    //验证信息(参数为输入框id,错误图标id,正则)
+    function verVailue(inputId, iconId, rule) {
+        if (!inputId || !iconId || !rule) {
+            return;
+        }
+        var value = document.getElementById(inputId).value;
+        if (rule.test(value)) {
+            //验证通过
+            inputSuccess(iconId);
+            return value;
+        } else {
+            //验证失败
+            inputError(iconId);
+            return false;
+        }
+    }
+
+
+    //请求部分
+
+    function ajax(options) {
+        options = options || {};
+        options.type = (options.type || "GET").toUpperCase();
+        options.dataType = options.dataType || "json";
+        var params = formatParams(options.data);
+
+        //创建 - 非IE6 - 第一步
+        if (window.XMLHttpRequest) {
+            var xhr = new XMLHttpRequest();
+        } else { //IE6及其以下版本浏览器
+            var xhr = new ActiveXObject('Microsoft.XMLHTTP');
+        }
+
+        //接收 - 第三步
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                var status = xhr.status;
+                if (status >= 200 && status < 300) {
+                    options.success && options.success(xhr.responseText, xhr.responseXML);
+                } else {
+                    options.fail && options.fail(status);
+                }
+            }
+        }
+
+        //连接 和 发送 - 第二步
+        if (options.type == "GET") {
+            xhr.open("GET", options.url + "?" + params, true);
+            xhr.send(null);
+        } else if (options.type == "POST") {
+            xhr.open("POST", options.url, true);
+            //设置表单提交时的内容类型
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send(params);
+        }
+    }
+
+    //格式化参数
+    function formatParams(data) {
+        var arr = [];
+        for (var name in data) {
+            arr.push(encodeURIComponent(name) + "=" + encodeURIComponent(data[name]));
+        }
+        arr.push(("v=" + Math.random()).replace(".", ""));
+        return arr.join("&");
     }
 </script>
 </html>
