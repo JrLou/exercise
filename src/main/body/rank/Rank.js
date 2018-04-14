@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import less from './Rank.less';
-import { Form, Row, Col, Input, Button, Icon } from 'antd';
-const FormItem = Form.Item;
+
+import SearchBox from '../../component/treeTable/TreeTable.js';
+
 
 class AdvancedSearchForm extends Component{
     constructor(props){
         super(props);
         this.state = {
-            expand: false,
-            test:111,
+
         };
 
     }
@@ -19,63 +19,15 @@ class AdvancedSearchForm extends Component{
 
 
     render(){
-        return (
-            <Form
-                className="ant-advanced-search-form"
-                onSubmit={(e)=>{this.handleSearch(e);}}
-            >
-                <Row gutter={24}>{this.getFields()}</Row>
-                <Row>
-                    <Col span={24} style={{ textAlign: 'right' }}>
-                        <Button type="primary" htmlType="submit">Search</Button>
-                        <Button style={{ marginLeft: 8 }} onClick={()=>{this.handleReset();}}>
-                            Clear
-                        </Button>
-                        <a style={{ marginLeft: 8, fontSize: 12 }} onClick={()=>{this.toggle();}}>
-                            Collapse <Icon type={this.state.expand ? 'up' : 'down'} />
-                        </a>
-                    </Col>
-                </Row>
-            </Form>
+        return(
+            <div className={less.mainPage}>
+                <div className={less.container}>
+                    <SearchBox/>
+                </div>
+            </div>
+
         );
-    }
-
-    handleSearch(e){
-        e.preventDefault();
-        this.props.form.validateFields((err, values) => {
-            console.log('Received values of form: ', values);
-        });
-    }
-
-    handleReset(){
-        this.props.form.resetFields();
-    }
-
-    toggle(){
-        const { expand } = this.state;
-        this.setState({ expand: !expand });
-    }
-
-    // To generate mock Form.Item
-    getFields(){
-        const count = this.state.expand ? 10 : 6;
-        const { getFieldDecorator } = this.props.form;
-        const children = [];
-        for (let i = 0; i < 10; i++) {
-            children.push(
-                <Col span={8} key={i} style={{ display: i < count ? 'block' : 'none' }}>
-                    <FormItem label={`Field ${i}`}>
-                        {getFieldDecorator(`field-${i}`)(
-                            <Input placeholder="placeholder" />
-                        )}
-                    </FormItem>
-                </Col>
-            );
-        }
-        return children;
     }
 }
 
-const WrappedAdvancedSearchForm = Form.create()(AdvancedSearchForm);
-
-module.exports = WrappedAdvancedSearchForm;
+module.exports = AdvancedSearchForm;
