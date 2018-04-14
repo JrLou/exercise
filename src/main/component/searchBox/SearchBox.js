@@ -7,9 +7,11 @@ class SearchBox extends Component {
         super(props);
 
         this.state = {
-            searchLoading: false,
-            resetLoading: false,
-            value: null,
+            searchLoading: false,       //是否正在搜索
+            resetLoading: false,        //是否正在重置
+            value: null,                //输入框的值
+            reg:this.props.reg||null,   //正则
+            passed:true,                  //正则验证状态
         };
     }
 
@@ -17,13 +19,21 @@ class SearchBox extends Component {
         return (
             <div className={less.container}>
                 <Input
-                    className={less.inputStyle}
+                    size={'large'}
+                    maxLength={'15'}
+                    className={this.state.passed?less.inputStyle:less.inputErr}
                     placeholder={this.props.placeholder || ''}
                     disabled={this.state.searchLoading||this.state.resetLoading}
                     value={this.state.value}
                     onChange={(obj) => {
                         let value = obj.target.value;
+                        if(this.state.reg){
+                            this.setState({
+                                passed:this.state.reg.test(value)
+                            });
+                        }
                         this.setInputValue(value);
+
                     }}
                     suffix={
                         <Icon
@@ -31,17 +41,21 @@ class SearchBox extends Component {
                             type={'close-circle-o'}
                             style={{fontSize: 18}}
                             onClick={() => {
-                                    this.setInputValue(null);
+                                    this.setState({
+                                        passed:true,
+                                        value:null,
+                                    });
                                 }
                             }
                         />
                     }
                 />
                 <Button
+                    size={'large'}
                     type={'primary'}
                     className={less.searchBtn}
                     loading={this.state.searchLoading}
-                    disabled={this.state.resetLoading||!this.state.value}
+                    disabled={this.state.resetLoading||!this.state.value||!this.state.passed}
                     onPressEnter={() => {
                         this.props.searchAction&&this.props.searchAction(this.state.value,this.changeLoadingState.bind(this));
                     }}
@@ -52,11 +66,15 @@ class SearchBox extends Component {
                     搜索
                 </Button>
                 <Button
+                    size={'large'}
                     className={less.resetBtn}
                     loading={this.state.resetLoading}
                     disabled={this.state.searchLoading}
                     onClick={()=>{
-                        this.setInputValue(null);
+                        this.setState({
+                            value:null,
+                            passed:true,
+                        });
                         this.props.reSetAction&&this.props.reSetAction(this.changeLoadingState.bind(this));
                     }}
                 >

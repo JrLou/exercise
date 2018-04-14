@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import less from './Rank.less';
 
-import SearchBox from '../../component/treeTable/TreeTable.js';
+import TreeTable from '../treeTable/TreeTable.js';
 
 
 class AdvancedSearchForm extends Component{
@@ -22,7 +22,7 @@ class AdvancedSearchForm extends Component{
         return(
             <div className={less.mainPage}>
                 <div className={less.container}>
-                    <SearchBox/>
+                    <TreeTable/>
                 </div>
             </div>
 

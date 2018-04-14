@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import {Table,Button} from 'antd';
+import {Table,Button,Modal} from 'antd';
 import less from './TreeTable.less';
-import SearchBox from '../searchBox/SearchBox.js';
+import SearchBox from '../../component/searchBox/SearchBox.js';
+import ShowDetail from '../../component/showDetail/ShowDetail.js';
+import CountryEditForm from './CountryEdit.js';
 
 class TreeTable extends Component {
     constructor(props) {
@@ -10,6 +12,12 @@ class TreeTable extends Component {
         this.state = {
             loading: false,
             update: 0,
+
+            editTitle:'',       //模态框标题
+            editType:null,      //编辑类型
+            editModal:false,    //编辑模态框
+            editData:null,      //编辑的数据
+            editLoading:false,  //确认按钮loading
         };
 
         //获取模拟数据
@@ -77,11 +85,33 @@ class TreeTable extends Component {
             },
             {
                 title:'操作',
-                render:()=>{
+                render:(text, record, index)=>{
                     return(
                         <div>
-                            <div className={less.btnDetail}>查看详情</div>
-                            <div className={less.btnAdd}>添加子成员</div>
+                            <div
+                                className={less.btnDetail}
+                                onClick={()=>{
+                                    let {English,code,index,name,state,type} = record;
+                                    let newTarget = {English,code,index,name,state,type};
+                                    log(newTarget);
+                                    this.detail.openDetail(true,newTarget);
+                                }}
+                            >
+                                查看详情
+                            </div>
+                            <div
+                                className={less.btnAdd}
+                                onClick = {()=>{
+                                    this.setState({
+                                        editTitle:'添加国家',
+                                        editType:0,
+                                        editData:null,
+                                        editModal:true,
+                                    });
+                                }}
+                            >
+                                添加子成员
+                            </div>
                             <div className={less.btnEdit}>编辑</div>
                             <div className={less.btnDelete}>删除</div>
                         </div>
@@ -99,6 +129,7 @@ class TreeTable extends Component {
                 <div className={less.searchBox}>
                     <SearchBox
                         placeholder={'请输入中文名、英文名或编码'}
+                        reg={/^[\u4e00-\u9fa5_a-zA-Z]*$/}
                         searchAction={(value,changeState)=>{
                             changeState('searchLoading',true);
                             alert(value);
@@ -136,6 +167,29 @@ class TreeTable extends Component {
                         this.changeChildRowsOpen(expanded, recode);
                     }}
                 />
+                <ShowDetail
+                    ref={(detail)=>{this.detail = detail;}}
+                />
+                <Modal
+                    ref={(modal)=>{this.modal = modal;}}
+                    title={this.state.editTitle||''}
+                    footer={null}
+                    visible={this.state.editModal}
+                    closable={false}
+                    confirmLoading={this.state.editLoading}
+                    maskClosable={false}
+                    onCancel={()=>{
+                        this.changeShowState(false);
+                    }}
+                    afterClose={()=>{
+                        this.setState({
+                            editTitle:null,
+                            editData:null,
+                        });
+                    }}
+                >
+                    {this.getModalView()}
+                </Modal>
             </div>
         );
     }
@@ -147,6 +201,24 @@ class TreeTable extends Component {
         this.setState({
             update: this.state.update + 1
         });
+    }
+
+    /**
+     * 获取编辑模态框的视图
+     */
+    getModalView(){
+        let type = this.state.type||0;
+        let view = null;
+        switch(type){
+            case 0:
+                view = <CountryEditForm
+                            changeModalState = {this.changeShowState.bind(this)}
+                        />;
+                break;
+            default:break;
+        }
+
+        return view;
     }
 
     /**
@@ -251,6 +323,16 @@ class TreeTable extends Component {
                 this.insertData(childTarget.children, index, data);
             }
         }
+    }
+
+    /**
+     * 改变编辑框的显示状态
+     * @param state
+     */
+    changeShowState(state){
+        this.setState({
+            editModal:state||false,
+        });
     }
 }
 

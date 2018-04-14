@@ -6,12 +6,15 @@
 }
 .inputStyle{
   width: 30%;
-  height: 36px;
   font-size: 16px;
 }
+.inputErr{
+  .inputStyle;
+  & input{
+    border-color: #e4393c !important;
+  }
+}
 .btn{
-  height: 36px;
-  font-size: 16px;
   margin-left: 20px;
   width: 100px;
 }
@@ -23,4 +26,5 @@
 }
 .clearBtn{
   cursor: pointer;
+  color: #e4393c;
 }
