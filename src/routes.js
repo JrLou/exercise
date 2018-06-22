@@ -100,6 +100,16 @@ const root = (
                 }
             }>
         </Route>
+        <Route
+            path="/Echarts-line"
+            getComponent={
+                (nextState, cb) => {
+                    require.ensure([], require => {
+                        cb(null, require("./main/body/echarts/echarts-line/LIne.js"));
+                    }, "Echarts-line");
+                }
+            }>
+        </Route>
     </Router>
 );
 module.exports = root;

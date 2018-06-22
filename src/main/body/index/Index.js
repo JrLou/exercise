@@ -81,6 +81,14 @@ class page extends Component {
                 >
                     <span>7.Antd-Mobile练习</span>
                 </div>
+                <div
+                    className={less.listItem}
+                    onClick={() => {
+                        window.app_open(this, '/Echarts-line');
+                    }}
+                >
+                    <span>7.Echarts-line练习</span>
+                </div>
             </div>
         );
     }
