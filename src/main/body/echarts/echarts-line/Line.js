@@ -54,7 +54,7 @@ class page extends Component{
         };
 
         this.searchConfig = {
-            date:['2018/06/11','2018/06/16'],
+            date:['2018/06/11','2018/12/11'],
         };
     }
 

@@ -141,7 +141,7 @@ class CountView extends Component {
     }
 
     //配置数据
-    setOption() {
+    getOptionConfig() {
         let option = this.option;
         let newData = this.props.sourceData && this.props.sourceData.data || [];
 
@@ -160,6 +160,8 @@ class CountView extends Component {
                 option.series[3].data.push(newData[key].failedNum);     //请求失败次数
             }
         }
+
+        return option;
     }
 
     //配置X轴
@@ -178,75 +180,34 @@ class CountView extends Component {
         if(section<86400000){
             //小于1天，配成小时
             for(let i = 1;i<=num;i++){
-                result.push(i);
+                let text = i + ':00';
+                result.push(text);
             }
         }else if(section < 4320000000){
             //小于50天，配成天
-            let preDayTemp = startDate.valueOf();
+            let dayTemp = startDate.valueOf();
             for(let i = 0;i<num;i++){
-                let nextDayTemp = preDayTemp + 86400000;
-                result.push(TimeHelp.getLineYMD(nextDayTemp));
+                result.push(TimeHelp.getLineYMD(dayTemp));
+                dayTemp = dayTemp + 86400000;
             }
         }else{
             //配成月
+            let newDate = startDate;
+            for(let i = 0;i<num;i++){
+                result.push(newDate.getFullYear()+'年'+newDate.getMonth()+'月');
+                newDate = new Date(newDate.setMonth(newDate.getMonth()+1));
+            }
         }
 
+        return result;
     }
 
 
     //绘制方法
     paintChart() {
-        this.option = this.setOption();
+        this.option = this.getOptionConfig();
 
-        this.myChart.setOption({
-            tooltip: {   //提示框
-                trigger: 'axis',
-
-            },
-            legend: {
-                data: ['请求次数', '订单数', '取消订单数', '请求失败次数'],
-                selected: this.props.selectConfig,
-            },
-            calculable: true,
-            yAxis:
-                {
-                    type: 'value'
-                }
-            ,
-            xAxis:
-                {
-                    type: 'category',
-                    boundaryGap: false,
-                    data: ['2018/05/02', '2018/05/03', '2018/05/04', '2018/05/05', '2018/05/06', '2018/05/07', '2018/05/08']
-                }
-            ,
-            series: [
-                {
-                    name: '请求次数',
-                    type: 'line',
-                    stack: '总量1',
-                    data: [120, 1320, 10, 1340, 900, 2300, 2100]
-                },
-                {
-                    name: '订单数',
-                    type: 'line',
-                    stack: '总量2',
-                    data: [220, 182, 191, 234, 290, 330, 310]
-                },
-                {
-                    name: '取消订单数',
-                    type: 'line',
-                    stack: '总量3',
-                    data: [150, 232, 201, 154, 190, 330, 410]
-                },
-                {
-                    name: '请求失败次数',
-                    type: 'line',
-                    stack: '总量4',
-                    data: [320, 332, 301, 334, 390, 330, 320]
-                },
-            ]
-        });
+        this.myChart.setOption(this.option);
     }
 
     //数字中插入逗号
