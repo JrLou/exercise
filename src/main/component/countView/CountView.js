@@ -19,6 +19,7 @@ class CountView extends Component {
 
         this.state = {};
 
+        //测试
         //基础配置
         this.option = {
             tooltip: {
