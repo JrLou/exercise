@@ -110,6 +110,16 @@ const root = (
                 }
             }>
         </Route>
+        <Route
+            path="/Antd-form"
+            getComponent={
+                (nextState, cb) => {
+                    require.ensure([], require => {
+                        cb(null, require("./main/body/antd/form/Form.js"));
+                    }, "Antd-form");
+                }
+            }>
+        </Route>
     </Router>
 );
 module.exports = root;
