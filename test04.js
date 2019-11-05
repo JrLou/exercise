@@ -1,2 +1,2 @@
 import {b} from './test03';
-console.log(123);
+console.log(1243);
