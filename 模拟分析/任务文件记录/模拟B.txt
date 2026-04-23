@@ -1,0 +1,115 @@
+虚拟设备id
+677c9f8038e6adffb2721bc2
+模拟场景标题
+老系统
+模拟场景id
+61a4a0964c4fbc7690759785
+虚拟设备样机标题
+HUAWEIWAS-AL00
+虚拟设备样机id
+61a49e3547c1c6ba3ff3f151
+虚拟设备品牌
+HUAWEI
+虚拟设备型号
+WAS-AL00
+虚拟设备SDK版本
+26
+下载地址
+https://oss.xiadoucloud.com/61a49e3547c1c643cbf3f152.zip
+MD5校验码
+bf63451bd5e4cf18b5d67d0a92919aad
+创建时间
+2025-01-07 11:29
+最后使用时间
+2025-01-07 11:29（1 年前）
+虚拟设备自身的build
+[
+  {
+    "key": "ro.sys.imei",
+    "value": "865866035057585,865866032531376"
+  },
+  {
+    "key": "ro.sys.device.id",
+    "value": "865866035057585,865866032531376"
+  },
+  {
+    "key": "ro.sys.imsi",
+    "value": "724182488447285,724184540025735"
+  },
+  {
+    "key": "ro.sys.simseria",
+    "value": "724182488447285,724184540025735"
+  },
+  {
+    "key": "ro.boot.mac.wifi",
+    "value": "3D:47:54:AC:54:C5"
+  },
+  {
+    "key": "ro.serialno",
+    "value": "2f9b3ab1dd27635a"
+  },
+  {
+    "key": "ro.boot.serialno",
+    "value": "2f9b3ab1dd27635a"
+  },
+  {
+    "name": "SERIAL",
+    "value": "2f9b3ab1dd27635a"
+  },
+  {
+    "key": "ro.sys.ssid",
+    "value": "6aomwg3i"
+  },
+  {
+    "key": "ro.sys.bssid",
+    "value": "CC:A6:A3:04:CE:8B"
+  },
+  {
+    "key": "ro.sys.networkinfo.extrainfo",
+    "value": "6aomwg3i"
+  },
+  {
+    "key": "net.hostname",
+    "value": "1aa5d4049a72b84d"
+  },
+  {
+    "key": "gsm.operator.alpha",
+    "value": "datora,datora"
+  },
+  {
+    "key": "gsm.operator.numeric",
+    "value": "72418,72418"
+  },
+  {
+    "key": "ro.sys.simcountryiso",
+    "value": "br"
+  },
+  {
+    "key": "gsm.operator.iso-country",
+    "value": "br,br"
+  },
+  {
+    "key": "gsm.sim.operator.numeric",
+    "value": "72418,72418"
+  },
+  {
+    "key": "ro.sys.networkoperatorname",
+    "value": "datora"
+  },
+  {
+    "key": "gsm.sim.operator.iso-country",
+    "value": "br,br"
+  },
+  {
+    "key": "ro.sys.networkcountryiso",
+    "value": "br"
+  }
+]
+虚拟设备自身的config
+{
+  "mac_wifi": "3D:47:54:AC:54:C5",
+  "sys_class_net_wlan0_address": "M0Q6NDc6NTQ6QUM6NTQ6QzU=",
+  "telephonycase": "icc_id:89551805425764376184,sim_id:0,display_name:datora|icc_id:89551850636211505456,sim_id:1,display_name:datora",
+  "wificase": "CC:A6:A3:04:CE:8B;-91;6aomwg3i|70:E1:B2:6C:2B:0A;-91;bbmgp1u8vkmrz8",
+  "android_id": "0456c736c87196a9"
+}

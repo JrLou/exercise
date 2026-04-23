@@ -1,0 +1,115 @@
+虚拟设备id
+65d4afc2afda375f87ed3544
+模拟场景标题
+老系统
+模拟场景id
+61a4a0964c4fbc7690759785
+虚拟设备样机标题
+HUAWEIVIE-AL10
+虚拟设备样机id
+61a49e3247c1c614c9f3f0d5
+虚拟设备品牌
+HUAWEI
+虚拟设备型号
+VIE-AL10
+虚拟设备SDK版本
+26
+下载地址
+https://oss.xiadoucloud.com/61a49e3247c1c6c965f3f0d6.zip
+MD5校验码
+da4e94ba20a68716b427a012661e5905
+创建时间
+2024-02-20 21:57
+最后使用时间
+2024-02-20 21:57（2 年前）
+虚拟设备自身的build
+[
+  {
+    "key": "ro.sys.imei",
+    "value": "861962036887940,861962038807847"
+  },
+  {
+    "key": "ro.sys.device.id",
+    "value": "861962036887940,861962038807847"
+  },
+  {
+    "key": "ro.sys.imsi",
+    "value": "603211040885806,603219066994406"
+  },
+  {
+    "key": "ro.sys.simseria",
+    "value": "603211040885806,603219066994406"
+  },
+  {
+    "key": "ro.boot.mac.wifi",
+    "value": "A0:7E:A9:6F:BF:1D"
+  },
+  {
+    "key": "ro.serialno",
+    "value": "77e50cad3d4211fd"
+  },
+  {
+    "key": "ro.boot.serialno",
+    "value": "77e50cad3d4211fd"
+  },
+  {
+    "name": "SERIAL",
+    "value": "77e50cad3d4211fd"
+  },
+  {
+    "key": "ro.sys.ssid",
+    "value": "ttwl19m0jj49fs"
+  },
+  {
+    "key": "ro.sys.bssid",
+    "value": "F1:96:2C:C1:13:CE"
+  },
+  {
+    "key": "ro.sys.networkinfo.extrainfo",
+    "value": "ttwl19m0jj49fs"
+  },
+  {
+    "key": "net.hostname",
+    "value": "de61b19f8a1d27f0"
+  },
+  {
+    "key": "gsm.operator.alpha",
+    "value": "ANESRIF,ANESRIF"
+  },
+  {
+    "key": "gsm.operator.numeric",
+    "value": "60321,60321"
+  },
+  {
+    "key": "ro.sys.simcountryiso",
+    "value": "dz"
+  },
+  {
+    "key": "gsm.operator.iso-country",
+    "value": "dz,dz"
+  },
+  {
+    "key": "gsm.sim.operator.numeric",
+    "value": "60321,60321"
+  },
+  {
+    "key": "ro.sys.networkoperatorname",
+    "value": "ANESRIF"
+  },
+  {
+    "key": "gsm.sim.operator.iso-country",
+    "value": "dz,dz"
+  },
+  {
+    "key": "ro.sys.networkcountryiso",
+    "value": "dz"
+  }
+]
+虚拟设备自身的config
+{
+  "mac_wifi": "A0:7E:A9:6F:BF:1D",
+  "sys_class_net_wlan0_address": "QTA6N0U6QTk6NkY6QkY6MUQ=",
+  "telephonycase": "icc_id:89213215585463705214,sim_id:0,display_name:ANESRIF|icc_id:89213218111790285809,sim_id:1,display_name:ANESRIF",
+  "wificase": "F1:96:2C:C1:13:CE;-40;ttwl19m0jj49fs",
+  "android_id": "f3c45772c7c462c6"
+}

@@ -1,0 +1,107 @@
+虚拟设备id
+66ae9e7ae1fd2eb0e8e7888b
+模拟场景标题
+老系统
+模拟场景id
+61a4a0964c4fbc7690759785
+虚拟设备样机标题
+HUAWEIVOG-AL10
+虚拟设备样机id
+61a49e1a47c1c640b5f3ecf5
+虚拟设备品牌
+HUAWEI
+虚拟设备型号
+VOG-AL10
+虚拟设备SDK版本
+28
+下载地址
+https://oss.xiadoucloud.com/61a49e1a47c1c6f82af3ecf6.zip
+MD5校验码
+13b8b090ef4e6249d58dce13ec19417a
+创建时间
+2024-08-04 05:17
+最后使用时间
+2024-08-04 05:17（1 年前）
+虚拟设备自身的build
+[
+  {
+    "key": "ro.sys.imei",
+    "value": "868778046129971,868778047645561"
+  },
+  {
+    "key": "ro.sys.device.id",
+    "value": "868778046129971,868778047645561"
+  },
+  {
+    "key": "ro.sys.imsi",
+    "value": "730150952660432,730154015064374"
+  },
+  {
+    "key": "ro.sys.simseria",
+    "value": "730150952660432,730154015064374"
+  },
+  {
+    "key": "ro.boot.mac.wifi",
+    "value": "55:BA:47:A5:5A:C3"
+  },
+  {
+    "key": "ro.serialno",
+    "value": "c944bb8bd62f5e3b"
+  },
+  {
+    "key": "ro.boot.serialno",
+    "value": "c944bb8bd62f5e3b"
+  },
+  {
+    "name": "SERIAL",
+    "value": "c944bb8bd62f5e3b"
+  },
+  {
+    "key": "ro.sys.ssid",
+    "value": "3xggbg6ed1"
+  },
+  {
+    "key": "ro.sys.bssid",
+    "value": "AB:C7:63:A8:87:BA"
+  },
+  {
+    "key": "net.hostname",
+    "value": "1ef5a2d7cb0ac68b"
+  },
+  {
+    "key": "gsm.operator.alpha",
+    "value": ","
+  },
+  {
+    "key": "gsm.operator.numeric",
+    "value": "73015,73015"
+  },
+  {
+    "key": "ro.sys.simcountryiso",
+    "value": "cl"
+  },
+  {
+    "key": "gsm.operator.iso-country",
+    "value": "cl,cl"
+  },
+  {
+    "key": "gsm.sim.operator.numeric",
+    "value": "73015,73015"
+  },
+  {
+    "key": "gsm.sim.operator.iso-country",
+    "value": "cl,cl"
+  },
+  {
+    "key": "ro.sys.networkcountryiso",
+    "value": "cl"
+  }
+]
+虚拟设备自身的config
+{
+  "mac_wifi": "55:BA:47:A5:5A:C3",
+  "sys_class_net_wlan0_address": "NTU6QkE6NDc6QTU6NUE6QzM=",
+  "telephonycase": "icc_id:89561529770236192055,sim_id:0,display_name:|icc_id:89561542426067799889,sim_id:1,display_name:",
+  "wificase": "AB:C7:63:A8:87:BA;-40;3xggbg6ed1|E8:BC:3B:59:12:AA;-93;nw08ula5r34yjpdm",
+  "android_id": "492ac44b8d3be144"
+}

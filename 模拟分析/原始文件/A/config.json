@@ -10,19 +10,27 @@
     },
     {
       "key": "gsm.operator.alpha",
-      "value": "Ooredoo"
+      "value": "中国移动"
+    },
+    {
+      "key": "gsm.operator.iso-country",
+      "value": "cn"
     },
     {
       "key": "gsm.operator.numeric",
-      "value": "60303"
+      "value": "46000"
     },
     {
       "key": "gsm.sim.operator.alpha",
       "value": "CMCC"
     },
     {
+      "key": "gsm.sim.operator.iso-country",
+      "value": "cn"
+    },
+    {
       "key": "gsm.sim.operator.numeric",
-      "value": "60303"
+      "value": "46000"
     },
     {
       "key": "gsm.sim.state",
@@ -38,7 +46,7 @@
     },
     {
       "key": "net.hostname",
-      "value": "b7cfab462a8574e9"
+      "value": "HUAWEI_P9-b89ed2f2d18d117"
     },
     {
       "key": "persist.sys.country",
@@ -66,11 +74,11 @@
     },
     {
       "key": "ro.boot.mac.wifi",
-      "value": "0B:35:B2:AE:AF:82"
+      "value": "7C:11:CB:AA:EB:58"
     },
     {
       "key": "ro.boot.serialno",
-      "value": "c8e6c9c282fd5204"
+      "value": "323d7616638bb9f7"
     },
     {
       "key": "ro.bootimage.build.date",
@@ -270,7 +278,7 @@
     },
     {
       "key": "ro.serialno",
-      "value": "c8e6c9c282fd5204"
+      "value": "323d7616638bb9f7"
     },
     {
       "key": "ro.sf.lcd_density",
@@ -314,7 +322,7 @@
     },
     {
       "key": "ro.sys.bssid",
-      "value": "96:26:93:10:7D:C3"
+      "value": "34:ce:00:58:c5:53"
     },
     {
       "key": "ro.sys.celllocation",
@@ -330,7 +338,7 @@
     },
     {
       "key": "ro.sys.device.id",
-      "value": "862002036892340,862002033981575"
+      "value": "862002030216637,862002030795309"
     },
     {
       "key": "ro.sys.devicesoftwareversion",
@@ -350,11 +358,11 @@
     },
     {
       "key": "ro.sys.imei",
-      "value": "862002036892340,862002033981575"
+      "value": "862002030216637,862002030795309"
     },
     {
       "key": "ro.sys.imsi",
-      "value": "603030013770773"
+      "value": "460008744527095"
     },
     {
       "key": "ro.sys.lac",
@@ -369,8 +377,12 @@
       "value": ""
     },
     {
+      "key": "ro.sys.networkcountryiso",
+      "value": "cn"
+    },
+    {
       "key": "ro.sys.networkinfo.extrainfo",
-      "value": "b5iqvhk5f6va9"
+      "value": "海军105_5G"
     },
     {
       "key": "ro.sys.networkinfo.subtype",
@@ -378,15 +390,15 @@
     },
     {
       "key": "ro.sys.networkinfo.type",
-      "value": -1
+      "value": 1
     },
     {
       "key": "ro.sys.networkinfo.typename",
-      "value": "-1"
+      "value": "WIFI"
     },
     {
       "key": "ro.sys.networkoperatorname",
-      "value": "Ooredoo"
+      "value": "中国移动"
     },
     {
       "key": "ro.sys.networktype",
@@ -401,12 +413,16 @@
       "value": 1
     },
     {
+      "key": "ro.sys.simcountryiso",
+      "value": "cn"
+    },
+    {
       "key": "ro.sys.simseria",
-      "value": "603030013770773"
+      "value": "89860095111457207587"
     },
     {
       "key": "ro.sys.ssid",
-      "value": "b5iqvhk5f6va9"
+      "value": "海军105_5G"
     },
     {
       "key": "ro.sys.widthPixels",
@@ -510,7 +526,7 @@
     },
     {
       "name": "SERIAL",
-      "value": "c8e6c9c282fd5204"
+      "value": "323d7616638bb9f7"
     },
     {
       "name": "TAGS",
@@ -559,39 +575,23 @@
     {
       "name": "VERSION.SECURITY_PATCH",
       "value": "2018-12-05"
-    },
-    {
-      "name": "ro.sys.simcountryiso",
-      "value": "dz"
-    },
-    {
-      "name": "gsm.operator.iso-country",
-      "value": "dz"
-    },
-    {
-      "name": "gsm.sim.operator.iso-country",
-      "value": "dz"
-    },
-    {
-      "name": "ro.sys.networkcountryiso",
-      "value": "dz"
     }
   ],
   "config": {
-    "android_id": "86fad566fd706d2f",
+    "android_id": "0402ffc1f8d4b40f",
     "cpuinfo_max_freq": "MTgwNTAwMAo=",
     "etc_vold_fstab": "",
-    "mac_wifi": "0B:35:B2:AE:AF:82",
+    "mac_wifi": "7C:11:CB:AA:EB:58",
     "proc_cpuinfo": "cHJvY2Vzc29yCTogMApCb2dvTUlQUwk6IDMuODQKRmVhdHVyZXMJOiBmcCBhc2ltZCBldnRzdHJtIGFlcyBwbXVsbCBzaGExIHNoYTIgY3JjMzIKQ1BVIGltcGxlbWVudGVyCTogMHg0MQpDUFUgYXJjaGl0ZWN0dXJlOiA4CkNQVSB2YXJpYW50CTogMHgwCkNQVSBwYXJ0CTogMHhkMDMKQ1BVIHJldmlzaW9uCTogNAoKcHJvY2Vzc29yCTogMQpCb2dvTUlQUwk6IDMuODQKRmVhdHVyZXMJOiBmcCBhc2ltZCBldnRzdHJtIGFlcyBwbXVsbCBzaGExIHNoYTIgY3JjMzIKQ1BVIGltcGxlbWVudGVyCTogMHg0MQpDUFUgYXJjaGl0ZWN0dXJlOiA4CkNQVSB2YXJpYW50CTogMHgwCkNQVSBwYXJ0CTogMHhkMDMKQ1BVIHJldmlzaW9uCTogNAoKcHJvY2Vzc29yCTogMgpCb2dvTUlQUwk6IDMuODQKRmVhdHVyZXMJOiBmcCBhc2ltZCBldnRzdHJtIGFlcyBwbXVsbCBzaGExIHNoYTIgY3JjMzIKQ1BVIGltcGxlbWVudGVyCTogMHg0MQpDUFUgYXJjaGl0ZWN0dXJlOiA4CkNQVSB2YXJpYW50CTogMHgwCkNQVSBwYXJ0CTogMHhkMDMKQ1BVIHJldmlzaW9uCTogNAoKcHJvY2Vzc29yCTogMwpCb2dvTUlQUwk6IDMuODQKRmVhdHVyZXMJOiBmcCBhc2ltZCBldnRzdHJtIGFlcyBwbXVsbCBzaGExIHNoYTIgY3JjMzIKQ1BVIGltcGxlbWVudGVyCTogMHg0MQpDUFUgYXJjaGl0ZWN0dXJlOiA4CkNQVSB2YXJpYW50CTogMHgwCkNQVSBwYXJ0CTogMHhkMDMKQ1BVIHJldmlzaW9uCTogNAoKcHJvY2Vzc29yCTogNApCb2dvTUlQUwk6IDMuODQKRmVhdHVyZXMJOiBmcCBhc2ltZCBldnRzdHJtIGFlcyBwbXVsbCBzaGExIHNoYTIgY3JjMzIKQ1BVIGltcGxlbWVudGVyCTogMHg0MQpDUFUgYXJjaGl0ZWN0dXJlOiA4CkNQVSB2YXJpYW50CTogMHgwCkNQVSBwYXJ0CTogMHhkMDgKQ1BVIHJldmlzaW9uCTogMAoKcHJvY2Vzc29yCTogNQpCb2dvTUlQUwk6IDMuODQKRmVhdHVyZXMJOiBmcCBhc2ltZCBldnRzdHJtIGFlcyBwbXVsbCBzaGExIHNoYTIgY3JjMzIKQ1BVIGltcGxlbWVudGVyCTogMHg0MQpDUFUgYXJjaGl0ZWN0dXJlOiA4CkNQVSB2YXJpYW50CTogMHgwCkNQVSBwYXJ0CTogMHhkMDgKQ1BVIHJldmlzaW9uCTogMAoKcHJvY2Vzc29yCTogNgpCb2dvTUlQUwk6IDMuODQKRmVhdHVyZXMJOiBmcCBhc2ltZCBldnRzdHJtIGFlcyBwbXVsbCBzaGExIHNoYTIgY3JjMzIKQ1BVIGltcGxlbWVudGVyCTogMHg0MQpDUFUgYXJjaGl0ZWN0dXJlOiA4CkNQVSB2YXJpYW50CTogMHgwCkNQVSBwYXJ0CTogMHhkMDgKQ1BVIHJldmlzaW9uCTogMAoKcHJvY2Vzc29yCTogNwpCb2dvTUlQUwk6IDMuODQKRmVhdHVyZXMJOiBmcCBhc2ltZCBldnRzdHJtIGFlcyBwbXVsbCBzaGExIHNoYTIgY3JjMzIKQ1BVIGltcGxlbWVudGVyCTogMHg0MQpDUFUgYXJjaGl0ZWN0dXJlOiA4CkNQVSB2YXJpYW50CTogMHgwCkNQVSBwYXJ0CTogMHhkMDgKQ1BVIHJldmlzaW9uCTogMAoK",
     "proc_meminfo": "TWVtVG90YWw6ICAgICAgICAzODA1NDQ0IGtCCk1lbUZyZWU6ICAgICAgICAgIDEyNjk2OCBrQgpNZW1BdmFpbGFibGU6ICAgICA0MjkwNTYga0IKQnVmZmVyczogICAgICAgICAgICAgNjQ4IGtCCkNhY2hlZDogICAgICAgICAgIDUxMzY2MCBrQgpTd2FwQ2FjaGVkOiAgICAgICAgIDg4NDAga0IKQWN0aXZlOiAgICAgICAgICAxNDUzOTIwIGtCCkluYWN0aXZlOiAgICAgICAgIDUyMjMwOCBrQgpBY3RpdmUoYW5vbik6ICAgIDEyNzM4OTYga0IKSW5hY3RpdmUoYW5vbik6ICAgMzI5OTI0IGtCCkFjdGl2ZShmaWxlKTogICAgIDE4MDAyNCBrQgpJbmFjdGl2ZShmaWxlKTogICAxOTIzODQga0IKVW5ldmljdGFibGU6ICAgICAgMTM0NzA0IGtCCkFjdGl2ZShwcm90X2Fub24pOiAgICAgICAgICAwIGtCCkluYWN0aXZlKHByb3RfYW5vbik6ICAgICAgICAwIGtCCkFjdGl2ZShwcm90X2ZpbGUpOiAgICAgIDQ3MjA0IGtCCkluYWN0aXZlKHByb3RfZmlsZSk6ICAgICAgICAwIGtCCk1sb2NrZWQ6ICAgICAgICAgIDEzNDcwNCBrQgpTd2FwVG90YWw6ICAgICAgIDIyOTM3NTYga0IKU3dhcEZyZWU6ICAgICAgICAgNzUyNTQ0IGtCCkRpcnR5OiAgICAgICAgICAgICAgIDI0MCBrQgpXcml0ZWJhY2s6ICAgICAgICAgICAgIDAga0IKQW5vblBhZ2VzOiAgICAgICAxNTk0NjA4IGtCCk1hcHBlZDogICAgICAgICAgIDI0MzM2OCBrQgpTaG1lbTogICAgICAgICAgICAgIDc2Mjgga0IKU2xhYjogICAgICAgICAgICAgMjc5ODgwIGtCClNSZWNsYWltYWJsZTogICAgICA3NjU0OCBrQgpTVW5yZWNsYWltOiAgICAgICAyMDMzMzIga0IKS2VybmVsU3RhY2s6ICAgICAgIDcyNzA0IGtCClBhZ2VUYWJsZXM6ICAgICAgICA3NTg4MCBrQgpORlNfVW5zdGFibGU6ICAgICAgICAgIDAga0IKQm91bmNlOiAgICAgICAgICAgICAgICAwIGtCCldyaXRlYmFja1RtcDogICAgICAgICAgMCBrQgpDb21taXRMaW1pdDogICAgIDQxOTY0NzYga0IKQ29tbWl0dGVkX0FTOiAgIDkzOTU4NjAwIGtCClZtYWxsb2NUb3RhbDogICAyNTg4NjcxMzYga0IKVm1hbGxvY1VzZWQ6ICAgICAgICAgICAwIGtCClZtYWxsb2NDaHVuazogICAgICAgICAgMCBrQgpDbWFUb3RhbDogICAgICAgICAgMzI3Njgga0IKQ21hRnJlZTogICAgICAgICAgICAgICAwIGtCCklzb2xhdGUxRnJlZTogICAgICAgICAxMiBrQgpJc29sYXRlMkZyZWU6ICAgICAgICAgIDAga0IK",
     "proc_net_arp": "SVAgYWRkcmVzcyAgICAgICBIVyB0eXBlICAgICBGbGFncyAgICAgICBIVyBhZGRyZXNzICAgICAgICAgICAgTWFzayAgICAgRGV2aWNlCjE5Mi4xNjguMTAxLjEgICAgMHgxICAgICAgICAgMHgyICAgICAgICAgZDA6MTY6YjQ6YjA6NGU6MjEgICAgICogICAgICAgIHdsYW4wCjE5Mi4xNjguMTAxLjEwICAgMHgxICAgICAgICAgMHgwICAgICAgICAgMTA6Yzc6NTM6M2U6Mjc6ZTMgICAgICogICAgICAgIHdsYW4wCg==",
     "proc_self_cgroup": "ODpwaWRzOi91bmNvbmZpcm1fYXBwCjc6ZnJlZXplcjovCjY6Y3B1c2V0Oi9iYWNrZ3JvdW5kCjU6YmxraW86L2JhY2tncm91bmQKNDppb2xpbWl0Oi9pb2NvbnRyb2wKMzpjcHU6LwoyOnNjaGVkdHVuZTovYmFja2dyb3VuZAoxOmNwdWFjY3Q6L3VpZF8xMDE2NS9waWRfMTUwOTYK",
     "proc_version": "",
-    "sys_class_net_wlan0_address": "MEI6MzU6QjI6QUU6QUY6ODI=",
+    "sys_class_net_wlan0_address": "N0M6MTE6Q0I6QUE6RUI6NTg=",
     "system_build_prop": "",
     "systemcase": "精品推荐:com.huawei.hifolder:90000301:9.0.0.301:1531307153000:1545188296000,com.android.cts.priv.ctsshim:com.android.cts.priv.ctsshim:27:8.1.0-4396705:1484031656000:1545188294000,相机:com.huawei.camera:80000302:8.0.0.302:1484714821000:1551377478000,玩机技巧:com.huawei.android.tips:801005:8.0.1.006:1531307153000:1545188294000,Android Services Library:com.google.android.ext.services:1:1:1484031879000:1545188295000,HwSynergy:com.huawei.synergy:1:1.0:1531307153000:1545188296000,华为桌面:com.huawei.android.launcher:800357:8.0.0.357:1468379686000:1545188296000,com.android.gallery3d.overlay:com.android.gallery3d.overlay:1:1.0:1484032447000:1545166653000,音乐:com.android.mediacenter:121108302:12.11.8.302:1468379689000:1579605782871,通话/信息存储:com.android.providers.telephony:26:5.0.0.1:1468379690000:1545188295000,UEInfoCheck:com.huawei.android.UEInfoCheck:1:7.0:1530037474000:1542400021000,录音机:com.android.phone.recorder:2:1.0.1:1468379684000:1545188296000,日历存储:com.android.providers.calendar:80000101:8.0.0.101:1468379686000:1545188295000,运动健康:com.huawei.health:1000053511:10.0.3.511:1468379697000:1580097635680,文件管理:com.huawei.hidisk:100600303:10.6.0.303:1484029108000:1574486788176,hiview:com.huawei.hiview:10003:8.0.5.318:1531307153000:1545188296000,com.huawei.iaware:com.huawei.iaware:26:8.0.0:1484031840000:1545188296000,通过蓝牙导入:com.huawei.bluetooth:800200:8.0.0.200:1468379687000:1545188296000,媒体存储:com.android.providers.media:900:8.0.0:1468379691000:1545188295000,主题:com.huawei.android.thememanager:100010335:10.0.10.335:1468379688000:1580097569726,HwChrService:com.huawei.android.chr:1:1.0:1468379689000:1545188295000,华为服务框架:com.huawei.android.hsf:100000304:10.0.0.304:1484031873000:1578391470804,Google One Time Init:com.google.android.onetimeinitializer:26:8.0.0-4147944:1539946042000:1540681005000,Android Shared Library:com.google.android.ext.shared:1:1:1484031846000:1545188296000,com.android.wallpapercropper:com.android.wallpapercropper:26:8.0.0:1468379691000:1545188295000,HwNearby:com.huawei.nearby:800300:8.0.0.300:1531307153000:1545188296000,悬浮导航:com.huawei.android.FloatTasks:80000350:8.0.0.350:1531307153000:1545188296000,智能助手:com.huawei.intelligent:100008313:10.0.8.313:1468379690000:1577793335308,手势服务:com.huawei.motionservice:80000355:8.0.0.355:1531307153000:1545188295000,SmartcardService:org.simalliance.openmobileapi.service:5:3.1.0:1531307153000:1545188296000,华为应用市场:com.huawei.appmarket:100300301:10.3.0.301:1468379693000:1580055357492,HwIntelligentRecSystem:com.huawei.recsys:80000316:8.0.0.316:1531307154000:1545188295000,学生模式:com.huawei.parentcontrol:800001202:8.0.1.202:1468379687000:1551377489000,Huawei Secure IME:com.huawei.secime:81000302:8.0.0.302:1468379687000:1545188296000,文件:com.android.documentsui:26:8.0.0:1468379686000:1545188295000,外部存储设备:com.android.externalstorage:26:8.0.0:1468379692000:1545188295000,HTML 查看器:com.android.htmlviewer:26:8.0.0:1468379687000:1545188296000,Companion Device Manager:com.android.companiondevicemanager:26:8.0.0:1531307153000:1545188296000,RegService:com.huawei.regservice:1:2.0:1517720701000:1551377223000,讯飞语音引擎:com.iflytek.speechsuite:10160:1.0.10160:1468379698000:1551377490000,MmsService:com.android.mms.service:26:8.0.0:1468379689000:1545188295000,华为钱包:com.huawei.wallet:900063010:9.0.6.301:1468379697000:1579191649000,天气数据服务:com.huawei.android.totemweather:800351:8.0.0.351:1539946058000:1551377496000,下载管理器:com.android.providers.downloads:26:8.0.0:1468379690000:1545188295000,com.huawei.cryptosms.service.CryptoMessageApplication:com.huawei.cryptosms.service:50000001:5.0.0.1:1468379686000:1545188296000,查找我的手机:com.huawei.android.findmyphone:100000308:10.0.0.308:1484031905000:1571023607869,设备认证服务:com.huawei.trustcircle:80000301:8.0.0.301:1531307153000:1545188296000,服务:com.huawei.phoneservice:100012300:10.0.12.300:1468379698000:1577546096888,屏幕录制:com.huawei.screenrecorder:80000356:8.0.0.356:1468379693000:1545188295000,隐私空间:com.huawei.securitymgr:811102:8.1.1.102:1468379687000:1545188296000,浏览器:com.android.browser:95000011:10.10.1.5306:1468379698000:1577546140690,ConfigUpdater:com.google.android.configupdater:26:8.0.0-4147944:1539946041000:1540681001000,录音机:com.android.soundrecorder:80200312:8.2.0.312:1468379688000:1540213325722,iConnect:com.huawei.iconnect:1:1.0:1531307153000:1545188296000,AutoRegSms:com.huawei.android.AutoRegSms:1:1.0:1468379686000:1542400021000,备份:com.huawei.KoBackup:210001350:10.0.1.350:1468379697000:1579605627461,优酷经典版:com.huawei.hwvplayer.youku:20540115:8.4.2:1468379691000:1579192092421,软件包访问帮助程序:com.android.defcontainer:26:8.0.0:1468379689000:1545188295000,com.huawei.hiviewtunnel:com.huawei.hiviewtunnel:3:8.0.5.310:1531307153000:1545188296000,下载内容:com.android.providers.downloads.ui:26:8.0.0:1468379687000:1545188296000,Google Play 服务更新程序:com.android.vending:80691602:6.9.16.G-all [2] 3910437:1539946042000:1540681005000,PacProcessor:com.android.pacprocessor:26:8.0.0:1468379684000:1545188296000,androidhwext:androidhwext:26:8.0.0:1468379699000:1545188298000,百度输入法华为版:com.baidu.input_huawei:2070:8.0.7.74:1505501512000:1550056846560,com.android.frameworkhwext.honor:com.android.frameworkhwext.honor:1:1.0:1531307154000:1545188294000,证书安装器:com.android.certinstaller:26:8.0.0:1468379685000:1545188296000,huawei.android.widget:huawei.android.widget:26:8.0.0:1531307154000:1545188296000,com.android.carrierconfig:com.android.carrierconfig:1:1.0.0:1484031870000:1545188295000,TalkBack:com.google.android.marvin.talkback:60100449:6.1.0.186797687:1468379698000:1540681029000,Android 系统:android:26:8.0.0:1468379699000:1545188297000,华为移动服务:com.huawei.hwid:40000334:4.0.0.334:1468379698000:1579433316248,com.huawei.msdp:com.huawei.msdp:10000002:1.0.0.2:1539946074000:1551377223000,智能提醒:com.huawei.tips:1:1.0:1531307153000:1545188296000,联系人:com.android.contacts:80100306:8.1.0.306:1468379695000:1545188295000,取词:com.huawei.contentsensor:80002300:8.0.2.300:1531307153000:1548040848070,系统服务:com.huawei.systemserver:60000007:6.0.0.7:1531307154000:1545188295000,com.android.frameworkhwext.dark:com.android.frameworkhwext.dark:1:1.0:1531307154000:1545188294000,信息:com.android.mms:80100304:8.1.0.304:1468379692000:1545188295000,MTP 服务:com.android.mtp:26:8.0.0:1484031870000:1545188295000,SIM 卡应用:com.android.stk:26:8.0.0:1468379687000:1545188296000,com.android.backupconfirm:com.android.backupconfirm:26:8.0.0:1468379690000:1545188294000,Huawei Share:com.huawei.android.instantshare:800300:8.0.0.300:1484031905000:1545188296000,智能解锁:com.huawei.trustagent:80000350:8.0.0.350:1468379685000:1545188296000,支付保护中心:com.huawei.trustspace:80000301:8.0.0.301:1484031905000:1551377492000,Intent Filter Verification Service:com.android.statementservice:1:1.0:1484031894000:1545188295000,Huawei Share:com.huawei.android.internal.app:26:8.0.0:1468379688000:1545188296000,FIDO UAF ASM:com.huawei.hwasm:80000301:8.0.0.301:1468379686000:1545166653000,华为生活服务:com.huawei.lives:100004300:10.0.4.300:1468379697000:1577546034066,日历:com.android.calendar:80000308:8.0.0.308:1468379695000:1551377509000,HwWifiproBqeService:com.huawei.wifiprobqeservice:80000201:8.0.0.201:1468379687000:1545188296000,设置存储:com.android.providers.settings:26:8.0.0:1468379688000:1545188295000,com.android.sharedstoragebackup:com.android.sharedstoragebackup:26:8.0.0:1468379689000:1545188295000,打印处理服务:com.android.printspooler:26:8.0.0:1468379687000:1545188296000,com.android.frameworkres.overlay:com.android.frameworkres.overlay:1:1.0:1484032447000:1545166653000,基本互动屏保:com.android.dreams.basic:26:8.0.0:1468379685000:1545188294000,拨号:com.android.incallui:80100301:8.1.0.301:1468379692000:1545188295000,手机管家:com.huawei.systemmanager:80000302:8.0.0.302:1468379697000:1545188296000,输入设备:com.android.inputdevices:26:8.0.0:1468379688000:1545188295000,在线黄页:com.huawei.yellowpage:60000302:6.0.0.302:1468379698000:1545188296000,默认打印服务:com.android.bips:26:8.0.0:1531307153000:1545188296000,手机克隆:com.hicloud.android.clone:1100001510:10.0.1.510:1539946060000:1579192954524,设备证书服务:com.huawei.hwonlineprovisionservice:2:2.0:1551377233000:1551377233000,HiLink:com.huawei.hilink.framework:2:8.0.0.301:1484031837000:1545188296000,Android System WebView:com.google.android.webview:349710050:69.0.3497.100:1468379698000:1551377507000,滚动截屏:com.huawei.HwMultiScreenShot:80000302:8.0.0.302:1484031905000:1545188295000,决策系统:com.huawei.decision:80000304:8.0.0.304:1539946041000:1551377481000,语音助手:com.huawei.vassistant:800311:8.0.0.311:1468379698000:1551377492000,通话管理:com.android.server.telecom:26:5.0.0.1:1468379689000:1545188295000,Google通讯录同步:com.google.android.syncadapters.contacts:26:8.0.0-4147944:1539946042000:1540681005000,备忘录:com.example.android.notepad:80000307:8.0.0.307:1468379698000:1545188295000,密钥链:com.android.keychain:26:8.0.0:1468379686000:1545188296000,华为杂志锁屏:com.android.keyguard:80000351:8.0.0.351:1468379690000:1545188296000,图库:com.android.gallery3d:80001315:8.0.1.315:1468379692000:1545188295000,手表应用同步:com.huawei.watch.sync:1:1.0.4:1484031839000:1551377497000,Google Play 服务:com.google.android.gms:13292019:13.2.92 (040400-215406870):1468379698000:1545188295000,Google服务框架:com.google.android.gsf:26:8.0.0-4147944:1468379698000:1545188295000,HwStartupGuide:com.huawei.hwstartupguide:80000369:8.0.0.369:1468379687000:1545188296000,Call Log Backup/Restore:com.android.calllogbackup:26:8.0.0:1514403164000:1545188295000,Google合作伙伴设置:com.google.android.partnersetup:26:8.0.0-4771557:1539946042000:1540681005000,FIDO UAF Client:com.huawei.fido.uafclient:80000301:8.0.0.301:1468379686000:1545166653000,打包安装程序:com.android.packageinstaller:360004300:3.60.4.300:1468379689000:1545188294000,Pico TTS:com.svox.pico:11:1.1:1468379690000:1545188296000,ProxyHandler:com.android.proxyhandler:26:8.0.0:1468379694000:1545188295000,无线分享:com.huawei.android.mirrorshare:800304:8.0.0.304:1468379687000:1545188296000,扫名片:com.huawei.contactscamcard:80100301:8.1.0.301:1484714823000:1551377481000,Print Service Recommendation Service:com.google.android.printservice.recommendation:2:1.1.0:1484031857000:1540681006000,工作资料设置:com.android.managedprovisioning:26:8.0.0:1468379689000:1545188295000,天气小工具:com.huawei.android.totemweatherwidget:800350:8.0.0.350:1539946058000:1551377496000,华为视频:com.huawei.himovie:80530301:8.5.30.301:1539946044000:1579605866852,智能识屏:com.huawei.hitouch:80001303:8.0.1.303:1531307153000:1545188296000,指南针:com.huawei.compass:80000355:8.0.0.355:1468379697000:1545188294000,图片屏保程序:com.android.dreams.phototable:26:8.0.0:1468379687000:1545188296000,华为VR Service:com.huawei.vrservice:1:1.0:1468379688000:1539946074000,双卡管理:com.huawei.android.dsdscardmanager:80100305:8.1.0.305:1468379685000:1545188295000,HwAps:com.huawei.android.hwaps:60000035:6.0.0.35:1468379684000:1545188296000,系统更新:com.huawei.android.hwouc:80020399:8.0.20.399:1468379688000:1545188296000,华为钱包安全支付:com.huawei.android.hwpay:80001308:8.0.1.308:1468379688000:1520387700860,WLAN 直连:com.huawei.android.wfdft:800300:8.0.0.300:1468379685000:1545188296000,Live Wallpaper Picker:com.android.wallpaper.livepicker:26:8.0.0:1468379687000:1545188296000,高德位置服务:com.amap.android.ams:109:2.1.1.1_a022:1468379690000:1551377223000,MMITest:com.huawei.mmitest:1:6.0.0:1468379685000:1551377489000,省电精灵:com.huawei.powergenie:8000081:8.0.81:1468379686000:1545188296000,智能截屏:com.qeexo.smartshot:80000350:8.0.0.350:1468379689000:1545166653000,Google 备份传输:com.google.android.backuptransport:26:8.0.0-4147944:1539946042000:1540681005000,HwInstantOnline:com.huawei.android.instantonline:1:1.0:1531307153000:1545188296000,设置:com.android.settings:5000004:5.0.0.4:1468379694000:1545188295000,华为商城:com.vmall.client:10803301:1.8.3.301:1468379697000:1577546398328,计算器:com.android.calculator2:80000355:8.0.0.355:1468379686000:1545188295000,高德地图:com.autonavi.minimap:8251:10.25.3.2927:1468379697000:1580097699740,工程菜单:com.huawei.android.projectmenu:20006:2.00.06:1468379686000:1551377489000,天气:com.huawei.android.totemweatherapp:800351:8.0.0.351:1539946057000:1551377495000,com.android.cts.ctsshim:com.android.cts.ctsshim:27:8.1.0-4396705:1484031657000:1545188296000,推送服务:com.huawei.android.pushagent:80000401:8.0.0.401:1468379687000:1545188296000,VpnDialogs:com.android.vpndialogs:26:8.0.0:1468379689000:1545188296000,电子邮件:com.android.email:80001207:8.0.1.207:1468379698000:1551377179000,拨号:com.android.phone:26:5.0.0.1:1468379694000:1545188295000,Shell:com.android.shell:26:8.0.0:1468379689000:1545188296000,com.android.wallpaperbackup:com.android.wallpaperbackup:26:8.0.0:1514403184000:1545188294000,存储已屏蔽的号码:com.android.providers.blockednumber:26:8.0.0:1484031905000:1545188295000,用户词典:com.android.providers.userdictionary:26:8.0.0:1468379684000:1545188296000,个人紧急信息:com.android.emergency:26:8.0.0:1484031905000:1545188295000,扫一扫:com.huawei.scanner:80000309:8.0.0.309:1484031905000:1545188295000,融合定位:com.android.location.fused:26:8.0.0:1468379689000:1545188295000,时钟:com.android.deskclock:80200414:8.2.0.414:1468379689000:1554957202568,系统用户界面:com.android.systemui:50001005:5.0.1.5:1468379692000:1545188295000,Exchange 服务:com.android.exchange:80001207:8.0.1.207:1468379692000:1545188295000,Bluetooth MIDI Service:com.android.bluetoothmidiservice:26:8.0.0:1484031833000:1545188296000,智能检测:com.huawei.hwdetectrepair:100000340:10.0.0.340:1526401580000:1570870741531,K 歌特效:com.huawei.android.karaoke:80100311:8.1.0.311:1528190586000:1551377223000,HwUE:com.huawei.bd:800300:8.0.0.300:1468379686000:1545188296000,CAService:com.huawei.ca:1:1.5.0.18:1484031888000:1545188295000,天际通数据服务:com.huawei.skytone:100301302:10.3.1.302:1468379698000:1579191854543,HwImsService:com.huawei.ims:1:1.0:1468379685000:1545188296000,HwLBSService:com.huawei.lbs:1:1.5.1.8:1484031834000:1545188296000,语义分析:com.huawei.nlp:2018091201:8.1.2.300:1539946059000:1551377497000,蓝牙:com.android.bluetooth:26:8.0.0:1468379685000:1545188296000,联系人存储:com.android.providers.contacts:60000:8.0.0.200:1468379694000:1545188295000,CaptivePortalLogin:com.android.captiveportallogin:26:8.0.0:1468379684000:1545188296000,HiAction:com.huawei.hiaction:80003200:8.0.3.200:1531307153000:1545188295000,镜子:com.android.hwmirror:1:1.0.0.0:1468379697000:1551377489000,多屏互动:com.huawei.android.airsharing:800305:8.0.0.305:1468379699000:1545188294000,WPS Office:cn.wps.moffice_eng:750:12.2.3:1468379697000:1579191942824",
-    "telephonycase": "icc_id:89213033431128287654,sim_id:0,display_name:Ooredoo",
+    "telephonycase": "icc_id:89860095111457207587,sim_id:0,display_name:CMCC",
     "usercase": "丰收互联:com.yitong.zjrc.mfs.android:301:3.0.1:1513743129016:1579206515603,搜狗输入法:com.sohu.inputmethod.sogou:1150:10.3:1481189564526:1578715109997,大润发优鲜:com.rt.market.fresh:1032000:1.3.2:1548755646924:1579605637823,中国农业银行:com.android.bankabc:52:4.2.3:1487300081325:1578100265733,交管12123:com.tmri.app.main:20400:2.4.0:1515836319990:1577793296123,美团:com.sankuai.meituan:1000060403:10.6.403:1481183907394:1579192341413,小度音箱:com.xiaodu.smartspeaker:32002000:3.20.0.102:1573995259736:1579605969001,QQ邮箱:com.tencent.androidqqmail:10142253:5.7.2:1481196737166:1577546071939,美图秀秀:com.mt.mtxx.mtxx:8751:8.7.5.1:1481191575853:1579191683055,个人所得税:cn.gov.tax.its:10202:1.2.2:1577935602175:1578100099473,铁路12306:com.MobileTicket:230:4.3.11:1481191642043:1579206553232,微信:com.tencent.mm:1580:7.0.10:1481184236896:1577793282604,滴滴出行:com.sdu.didi.psnger:656:5.4.0:1488380479994:1579191752112,淘宝联盟:com.alimama.moon:682000:6.8.2:1513034759536:1577546299985,QQ同步助手:com.tencent.qqpim:1930:6.9.25:1481190943917:1579433328399,喵街:com.taobao.shoppingstreets:157:4.1.6:1534480367050:1577546408219,开心消消乐®:com.happyelements.AndroidAnimal:77:1.77:1573006225290:1578919341904,虾米音乐:fm.xiami.main:232:8.2.6:1567912026719:1579433342955,拼多多:com.xunmeng.pinduoduo:49100:4.91.0:1560476008714:1579605614266,鸟嗒:com.peacebird.niaoda:35:3.7.7:1534480606532:1571198748790,华为主题动态引擎:com.ibimuyu.lockscreen:57:2.0.57:1543768776047:1577803027041,今日头条:com.ss.android.article.news:7571:7.5.7:1481183794739:1579191618993,芒果TV:com.hunantv.imgo.activity:6508100:6.5.8:1573978660195:1578391315758,UC浏览器:com.UCMobile:1062:12.8.2.1062:1481183962184:1579433378800,华为VR Store:com.baofeng.mj.huawei:20160704:1.00.0704:1468379750000:1481189497600,QQ:com.tencent.mobileqq:1320:8.2.6:1481184440200:1578100256878,浙江移动手机营业厅:com.example.businesshall:2020011001:5.3.0:1481196742423:1579433272623,中国建设银行:com.chinamworld.main:297:4.3.1:1514251375543:1580097714087,京东:com.jingdong.app.mall:71541:8.4.6:1542461323035:1579605906207,闲鱼:com.taobao.idlefish:183:6.6.32:1513596088367:1579606017839,携程旅行:ctrip.android.view:1269:8.19.0:1488193188136:1579193243912,颜选物语:com.yrychina.yrystore:36:1.2.8:1578104590132:1579518846247,海报工厂:com.meitu.poster:307:3.0.7:1509793545511:1575447435176,158影视:com.b1819792686.vyh:2:0.0.2:1564209563177:1564209563177,百度网盘:com.baidu.netdisk:1067:10.0.133:1515759806381:1578100234943,手机淘宝:com.taobao.taobao:271:9.4.0:1468379697000:1579206543489,电信营业厅:com.ct.client:7700:7.7.0:1552997487274:1579433351716,支付宝:com.eg.android.AlipayGphone:220:10.1.85.7000:1481184121027:1578311429028,唯品会:com.achievo.vipshop:71208:7.12.8:1488193200837:1579605735166",
-    "wificase": "96:26:93:10:7D:C3;-44;b5iqvhk5f6va9|A6:57:23:78:DA:C1;-81;94lub839q4bps|F6:D3:D4:35:2A:0C;-54;sy73rl6ccqo1e|03:5E:5E:27:45:76;-77;v0tqctaus0a|C9:F3:60:4B:34:41;-79;z14guj68ft99m"
+    "wificase": "34:ce:00:58:c5:53;-83;海军105_5G|d0:16:b4:f0:4e:2c;-56;HUAWEI-4E2C|50:3a:a0:48:5b:42;-86;509|54:75:95:10:6b:02;-78;bobo|88:df:9e:6b:7a:54;-81;ziran|68:fe:da:be:c9:4d;-73;ChinaNet-vsAz|d0:16:b4:b0:4e:2c;-54;508|f4:de:0c:a9:ec:e4;-79;CMCC-408|f4:83:cd:e2:0f:04;-73;TP-LINK_0F04"
   }
 }

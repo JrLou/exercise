@@ -81,16 +81,22 @@
     "compression": "^1.7.1",
     "connect-multiparty": "^2.1.0",
     "cookie-parser": "^1.4.3",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.0.0",
     "echarts": "^3.8.5",
     "echarts-gl": "^1.0.0-beta.6",
     "express": "^4.16.2",
     "hbs": "^4.0.1",
     "morgan": "^1.7.0",
+    "proj4": "^2.9.0",
     "qiniu": "^7.1.1",
     "request": "^2.83.0",
     "serve-favicon": "^2.3.2",
+    "sharp": "^0.33.4",
+    "socket.io-client": "^2.4.0",
     "stats": "^1.0.0",
-    "three": "^0.89.0"
+    "three": "^0.89.0",
+    "umi": "^4.2.3"
   },
   "author": {
     "name": "oliver"

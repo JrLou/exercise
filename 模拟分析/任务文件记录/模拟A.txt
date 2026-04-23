@@ -1,0 +1,115 @@
+虚拟设备id
+67903ad1c35c0fd79724ab82
+模拟场景标题
+老系统
+模拟场景id
+61a4a0964c4fbc7690759785
+虚拟设备样机标题
+HUAWEIEVA-AL10
+虚拟设备样机id
+61a49e3d47c1c649daf3f29f
+虚拟设备品牌
+HUAWEI
+虚拟设备型号
+EVA-AL10
+虚拟设备SDK版本
+26
+下载地址
+https://oss.xiadoucloud.com/61a49e3d47c1c6f418f3f2a0.zip
+MD5校验码
+9c4571f6b1c231a17f0befcd25f0c96d
+创建时间
+2025-01-22 08:24
+最后使用时间
+2025-01-22 08:24（10 个月前）
+虚拟设备自身的build
+[
+  {
+    "key": "ro.sys.imei",
+    "value": "862002036892340,862002033981575"
+  },
+  {
+    "key": "ro.sys.device.id",
+    "value": "862002036892340,862002033981575"
+  },
+  {
+    "key": "ro.sys.imsi",
+    "value": "603030013770773"
+  },
+  {
+    "key": "ro.sys.simseria",
+    "value": "603030013770773"
+  },
+  {
+    "key": "ro.boot.mac.wifi",
+    "value": "0B:35:B2:AE:AF:82"
+  },
+  {
+    "key": "ro.serialno",
+    "value": "c8e6c9c282fd5204"
+  },
+  {
+    "key": "ro.boot.serialno",
+    "value": "c8e6c9c282fd5204"
+  },
+  {
+    "name": "SERIAL",
+    "value": "c8e6c9c282fd5204"
+  },
+  {
+    "key": "ro.sys.ssid",
+    "value": "b5iqvhk5f6va9"
+  },
+  {
+    "key": "ro.sys.bssid",
+    "value": "96:26:93:10:7D:C3"
+  },
+  {
+    "key": "ro.sys.networkinfo.extrainfo",
+    "value": "b5iqvhk5f6va9"
+  },
+  {
+    "key": "net.hostname",
+    "value": "b7cfab462a8574e9"
+  },
+  {
+    "key": "gsm.operator.alpha",
+    "value": "Ooredoo"
+  },
+  {
+    "key": "gsm.operator.numeric",
+    "value": "60303"
+  },
+  {
+    "key": "ro.sys.simcountryiso",
+    "value": "dz"
+  },
+  {
+    "key": "gsm.operator.iso-country",
+    "value": "dz"
+  },
+  {
+    "key": "gsm.sim.operator.numeric",
+    "value": "60303"
+  },
+  {
+    "key": "ro.sys.networkoperatorname",
+    "value": "Ooredoo"
+  },
+  {
+    "key": "gsm.sim.operator.iso-country",
+    "value": "dz"
+  },
+  {
+    "key": "ro.sys.networkcountryiso",
+    "value": "dz"
+  }
+]
+虚拟设备自身的config
+{
+  "mac_wifi": "0B:35:B2:AE:AF:82",
+  "sys_class_net_wlan0_address": "MEI6MzU6QjI6QUU6QUY6ODI=",
+  "telephonycase": "icc_id:89213033431128287654,sim_id:0,display_name:Ooredoo",
+  "wificase": "96:26:93:10:7D:C3;-44;b5iqvhk5f6va9|A6:57:23:78:DA:C1;-81;94lub839q4bps|F6:D3:D4:35:2A:0C;-54;sy73rl6ccqo1e|03:5E:5E:27:45:76;-77;v0tqctaus0a|C9:F3:60:4B:34:41;-79;z14guj68ft99m",
+  "android_id": "86fad566fd706d2f"
+}
