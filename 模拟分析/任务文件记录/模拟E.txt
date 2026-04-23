@@ -1,0 +1,115 @@
+虚拟设备id
+66d3400642879e51d3738b8b
+模拟场景标题
+老系统
+模拟场景id
+61a4a0964c4fbc7690759785
+虚拟设备样机标题
+HUAWEIRNE-AL00
+虚拟设备样机id
+61a49e2d47c1c6c57ef3f037
+虚拟设备品牌
+HUAWEI
+虚拟设备型号
+RNE-AL00
+虚拟设备SDK版本
+26
+下载地址
+https://oss.xiadoucloud.com/61a49e2d47c1c61270f3f038.zip
+MD5校验码
+0ab95424c8ddaddaa634020eb19f53f4
+创建时间
+2024-09-01 00:08
+最后使用时间
+2024-09-01 00:08（1 年前）
+虚拟设备自身的build
+[
+  {
+    "key": "ro.sys.imei",
+    "value": "867540036227756,867540038269756"
+  },
+  {
+    "key": "ro.sys.device.id",
+    "value": "867540036227756,867540038269756"
+  },
+  {
+    "key": "ro.sys.imsi",
+    "value": "724036853244062"
+  },
+  {
+    "key": "ro.sys.simseria",
+    "value": "724036853244062"
+  },
+  {
+    "key": "ro.boot.mac.wifi",
+    "value": "D0:24:B6:0D:50:DF"
+  },
+  {
+    "key": "ro.serialno",
+    "value": "76b21167e5b7e23a"
+  },
+  {
+    "key": "ro.boot.serialno",
+    "value": "76b21167e5b7e23a"
+  },
+  {
+    "name": "SERIAL",
+    "value": "76b21167e5b7e23a"
+  },
+  {
+    "key": "ro.sys.ssid",
+    "value": "fxzc927ccx9qh"
+  },
+  {
+    "key": "ro.sys.bssid",
+    "value": "EC:8A:E6:4B:3E:F6"
+  },
+  {
+    "key": "ro.sys.networkinfo.extrainfo",
+    "value": "fxzc927ccx9qh"
+  },
+  {
+    "key": "net.hostname",
+    "value": "2daa699000ac41ef"
+  },
+  {
+    "key": "gsm.operator.alpha",
+    "value": "TIM"
+  },
+  {
+    "key": "gsm.operator.numeric",
+    "value": "72403"
+  },
+  {
+    "key": "ro.sys.simcountryiso",
+    "value": "br"
+  },
+  {
+    "key": "gsm.operator.iso-country",
+    "value": "br"
+  },
+  {
+    "key": "gsm.sim.operator.numeric",
+    "value": "72403"
+  },
+  {
+    "key": "ro.sys.networkoperatorname",
+    "value": "TIM"
+  },
+  {
+    "key": "gsm.sim.operator.iso-country",
+    "value": "br"
+  },
+  {
+    "key": "ro.sys.networkcountryiso",
+    "value": "br"
+  }
+]
+虚拟设备自身的config
+{
+  "mac_wifi": "D0:24:B6:0D:50:DF",
+  "sys_class_net_wlan0_address": "RDA6MjQ6QjY6MEQ6NTA6REY=",
+  "telephonycase": "icc_id:89550370327138383317,sim_id:0,display_name:TIM",
+  "wificase": "EC:8A:E6:4B:3E:F6;-66;fxzc927ccx9qh|F4:C9:1E:9D:60:94;-11;aab23zo21olijwc|AF:FD:83:EF:06:E0;-89;d8722h00xwv6j|47:F7:65:8C:3A:DE;-65;cl65knjhm|8B:00:67:EC:87:21;-67;jax98vfrrm0j",
+  "android_id": "f1479d36d0aa09e6"
+}
