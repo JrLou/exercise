@@ -1,0 +1,932 @@
+{
+  "2025-12": {
+    "is_crawler": {
+      "true": {
+        "count": 14,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 350357,
+        "percentage": "100.00"
+      },
+      "total": 350371
+    },
+    "mobile": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 350371,
+        "percentage": "100.00"
+      },
+      "total": 350371
+    },
+    "proxy": {
+      "true": {
+        "count": 309886,
+        "percentage": "88.45"
+      },
+      "false": {
+        "count": 40485,
+        "percentage": "11.55"
+      },
+      "total": 350371
+    },
+    "vpn": {
+      "true": {
+        "count": 20445,
+        "percentage": "5.84"
+      },
+      "false": {
+        "count": 329926,
+        "percentage": "94.16"
+      },
+      "total": 350371
+    },
+    "tor": {
+      "true": {
+        "count": 28,
+        "percentage": "0.01"
+      },
+      "false": {
+        "count": 350343,
+        "percentage": "99.99"
+      },
+      "total": 350371
+    },
+    "active_vpn": {
+      "true": {
+        "count": 1617,
+        "percentage": "0.46"
+      },
+      "false": {
+        "count": 348754,
+        "percentage": "99.54"
+      },
+      "total": 350371
+    },
+    "active_tor": {
+      "true": {
+        "count": 3,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 350368,
+        "percentage": "100.00"
+      },
+      "total": 350371
+    },
+    "recent_abuse": {
+      "true": {
+        "count": 328351,
+        "percentage": "93.72"
+      },
+      "false": {
+        "count": 22020,
+        "percentage": "6.28"
+      },
+      "total": 350371
+    },
+    "bot_status": {
+      "true": {
+        "count": 326434,
+        "percentage": "93.17"
+      },
+      "false": {
+        "count": 23937,
+        "percentage": "6.83"
+      },
+      "total": 350371
+    },
+    "shared_connection": {
+      "true": {
+        "count": 247995,
+        "percentage": "70.78"
+      },
+      "false": {
+        "count": 102376,
+        "percentage": "29.22"
+      },
+      "total": 350371
+    },
+    "dynamic_connection": {
+      "true": {
+        "count": 153698,
+        "percentage": "43.87"
+      },
+      "false": {
+        "count": 196673,
+        "percentage": "56.13"
+      },
+      "total": 350371
+    },
+    "frequent_abuser": {
+      "true": {
+        "count": 132196,
+        "percentage": "37.73"
+      },
+      "false": {
+        "count": 218175,
+        "percentage": "62.27"
+      },
+      "total": 350371
+    },
+    "high_risk_attacks": {
+      "true": {
+        "count": 77443,
+        "percentage": "22.10"
+      },
+      "false": {
+        "count": 272928,
+        "percentage": "77.90"
+      },
+      "total": 350371
+    },
+    "security_scanner": {
+      "true": {
+        "count": 10,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 350361,
+        "percentage": "100.00"
+      },
+      "total": 350371
+    },
+    "trusted_network": {
+      "true": {
+        "count": 174,
+        "percentage": "0.05"
+      },
+      "false": {
+        "count": 350197,
+        "percentage": "99.95"
+      },
+      "total": 350371
+    },
+    "abuse_velocity": {
+      "low": {
+        "count": 62180,
+        "percentage": "17.75"
+      },
+      "medium": {
+        "count": 51023,
+        "percentage": "14.56"
+      },
+      "high": {
+        "count": 207072,
+        "percentage": "59.10"
+      },
+      "none": {
+        "count": 30096,
+        "percentage": "8.59"
+      },
+      "total": 350371
+    }
+  },
+  "2026-01": {
+    "is_crawler": {
+      "true": {
+        "count": 6,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 429171,
+        "percentage": "100.00"
+      },
+      "total": 429177
+    },
+    "mobile": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 429177,
+        "percentage": "100.00"
+      },
+      "total": 429177
+    },
+    "proxy": {
+      "true": {
+        "count": 390114,
+        "percentage": "90.90"
+      },
+      "false": {
+        "count": 39063,
+        "percentage": "9.10"
+      },
+      "total": 429177
+    },
+    "vpn": {
+      "true": {
+        "count": 29277,
+        "percentage": "6.82"
+      },
+      "false": {
+        "count": 399900,
+        "percentage": "93.18"
+      },
+      "total": 429177
+    },
+    "tor": {
+      "true": {
+        "count": 64,
+        "percentage": "0.01"
+      },
+      "false": {
+        "count": 429113,
+        "percentage": "99.99"
+      },
+      "total": 429177
+    },
+    "active_vpn": {
+      "true": {
+        "count": 3122,
+        "percentage": "0.73"
+      },
+      "false": {
+        "count": 426055,
+        "percentage": "99.27"
+      },
+      "total": 429177
+    },
+    "active_tor": {
+      "true": {
+        "count": 46,
+        "percentage": "0.01"
+      },
+      "false": {
+        "count": 429131,
+        "percentage": "99.99"
+      },
+      "total": 429177
+    },
+    "recent_abuse": {
+      "true": {
+        "count": 407222,
+        "percentage": "94.88"
+      },
+      "false": {
+        "count": 21955,
+        "percentage": "5.12"
+      },
+      "total": 429177
+    },
+    "bot_status": {
+      "true": {
+        "count": 405038,
+        "percentage": "94.38"
+      },
+      "false": {
+        "count": 24139,
+        "percentage": "5.62"
+      },
+      "total": 429177
+    },
+    "shared_connection": {
+      "true": {
+        "count": 312738,
+        "percentage": "72.87"
+      },
+      "false": {
+        "count": 116439,
+        "percentage": "27.13"
+      },
+      "total": 429177
+    },
+    "dynamic_connection": {
+      "true": {
+        "count": 187042,
+        "percentage": "43.58"
+      },
+      "false": {
+        "count": 242135,
+        "percentage": "56.42"
+      },
+      "total": 429177
+    },
+    "frequent_abuser": {
+      "true": {
+        "count": 176038,
+        "percentage": "41.02"
+      },
+      "false": {
+        "count": 253139,
+        "percentage": "58.98"
+      },
+      "total": 429177
+    },
+    "high_risk_attacks": {
+      "true": {
+        "count": 99270,
+        "percentage": "23.13"
+      },
+      "false": {
+        "count": 329907,
+        "percentage": "76.87"
+      },
+      "total": 429177
+    },
+    "security_scanner": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 429177,
+        "percentage": "100.00"
+      },
+      "total": 429177
+    },
+    "trusted_network": {
+      "true": {
+        "count": 140,
+        "percentage": "0.03"
+      },
+      "false": {
+        "count": 429037,
+        "percentage": "99.97"
+      },
+      "total": 429177
+    },
+    "abuse_velocity": {
+      "low": {
+        "count": 51855,
+        "percentage": "12.08"
+      },
+      "medium": {
+        "count": 59741,
+        "percentage": "13.92"
+      },
+      "high": {
+        "count": 287899,
+        "percentage": "67.08"
+      },
+      "none": {
+        "count": 29682,
+        "percentage": "6.92"
+      },
+      "total": 429177
+    }
+  },
+  "2026-02": {
+    "is_crawler": {
+      "true": {
+        "count": 9,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 427799,
+        "percentage": "100.00"
+      },
+      "total": 427808
+    },
+    "mobile": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 427808,
+        "percentage": "100.00"
+      },
+      "total": 427808
+    },
+    "proxy": {
+      "true": {
+        "count": 383963,
+        "percentage": "89.75"
+      },
+      "false": {
+        "count": 43845,
+        "percentage": "10.25"
+      },
+      "total": 427808
+    },
+    "vpn": {
+      "true": {
+        "count": 29926,
+        "percentage": "7.00"
+      },
+      "false": {
+        "count": 397882,
+        "percentage": "93.00"
+      },
+      "total": 427808
+    },
+    "tor": {
+      "true": {
+        "count": 24,
+        "percentage": "0.01"
+      },
+      "false": {
+        "count": 427784,
+        "percentage": "99.99"
+      },
+      "total": 427808
+    },
+    "active_vpn": {
+      "true": {
+        "count": 3357,
+        "percentage": "0.78"
+      },
+      "false": {
+        "count": 424451,
+        "percentage": "99.22"
+      },
+      "total": 427808
+    },
+    "active_tor": {
+      "true": {
+        "count": 1,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 427807,
+        "percentage": "100.00"
+      },
+      "total": 427808
+    },
+    "recent_abuse": {
+      "true": {
+        "count": 405525,
+        "percentage": "94.79"
+      },
+      "false": {
+        "count": 22283,
+        "percentage": "5.21"
+      },
+      "total": 427808
+    },
+    "bot_status": {
+      "true": {
+        "count": 402820,
+        "percentage": "94.16"
+      },
+      "false": {
+        "count": 24988,
+        "percentage": "5.84"
+      },
+      "total": 427808
+    },
+    "shared_connection": {
+      "true": {
+        "count": 320635,
+        "percentage": "74.95"
+      },
+      "false": {
+        "count": 107173,
+        "percentage": "25.05"
+      },
+      "total": 427808
+    },
+    "dynamic_connection": {
+      "true": {
+        "count": 186666,
+        "percentage": "43.63"
+      },
+      "false": {
+        "count": 241142,
+        "percentage": "56.37"
+      },
+      "total": 427808
+    },
+    "frequent_abuser": {
+      "true": {
+        "count": 175624,
+        "percentage": "41.05"
+      },
+      "false": {
+        "count": 252184,
+        "percentage": "58.95"
+      },
+      "total": 427808
+    },
+    "high_risk_attacks": {
+      "true": {
+        "count": 101284,
+        "percentage": "23.68"
+      },
+      "false": {
+        "count": 326524,
+        "percentage": "76.32"
+      },
+      "total": 427808
+    },
+    "security_scanner": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 427808,
+        "percentage": "100.00"
+      },
+      "total": 427808
+    },
+    "trusted_network": {
+      "true": {
+        "count": 170,
+        "percentage": "0.04"
+      },
+      "false": {
+        "count": 427638,
+        "percentage": "99.96"
+      },
+      "total": 427808
+    },
+    "abuse_velocity": {
+      "low": {
+        "count": 44697,
+        "percentage": "10.45"
+      },
+      "medium": {
+        "count": 62620,
+        "percentage": "14.64"
+      },
+      "high": {
+        "count": 285215,
+        "percentage": "66.67"
+      },
+      "none": {
+        "count": 35276,
+        "percentage": "8.25"
+      },
+      "total": 427808
+    }
+  },
+  "2026-03": {
+    "is_crawler": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 488383,
+        "percentage": "100.00"
+      },
+      "total": 488383
+    },
+    "mobile": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 488383,
+        "percentage": "100.00"
+      },
+      "total": 488383
+    },
+    "proxy": {
+      "true": {
+        "count": 430966,
+        "percentage": "88.24"
+      },
+      "false": {
+        "count": 57417,
+        "percentage": "11.76"
+      },
+      "total": 488383
+    },
+    "vpn": {
+      "true": {
+        "count": 39053,
+        "percentage": "8.00"
+      },
+      "false": {
+        "count": 449330,
+        "percentage": "92.00"
+      },
+      "total": 488383
+    },
+    "tor": {
+      "true": {
+        "count": 23,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 488360,
+        "percentage": "100.00"
+      },
+      "total": 488383
+    },
+    "active_vpn": {
+      "true": {
+        "count": 4250,
+        "percentage": "0.87"
+      },
+      "false": {
+        "count": 484133,
+        "percentage": "99.13"
+      },
+      "total": 488383
+    },
+    "active_tor": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 488383,
+        "percentage": "100.00"
+      },
+      "total": 488383
+    },
+    "recent_abuse": {
+      "true": {
+        "count": 462091,
+        "percentage": "94.62"
+      },
+      "false": {
+        "count": 26292,
+        "percentage": "5.38"
+      },
+      "total": 488383
+    },
+    "bot_status": {
+      "true": {
+        "count": 458927,
+        "percentage": "93.97"
+      },
+      "false": {
+        "count": 29456,
+        "percentage": "6.03"
+      },
+      "total": 488383
+    },
+    "shared_connection": {
+      "true": {
+        "count": 371039,
+        "percentage": "75.97"
+      },
+      "false": {
+        "count": 117344,
+        "percentage": "24.03"
+      },
+      "total": 488383
+    },
+    "dynamic_connection": {
+      "true": {
+        "count": 212045,
+        "percentage": "43.42"
+      },
+      "false": {
+        "count": 276338,
+        "percentage": "56.58"
+      },
+      "total": 488383
+    },
+    "frequent_abuser": {
+      "true": {
+        "count": 204272,
+        "percentage": "41.83"
+      },
+      "false": {
+        "count": 284111,
+        "percentage": "58.17"
+      },
+      "total": 488383
+    },
+    "high_risk_attacks": {
+      "true": {
+        "count": 130520,
+        "percentage": "26.72"
+      },
+      "false": {
+        "count": 357863,
+        "percentage": "73.28"
+      },
+      "total": 488383
+    },
+    "security_scanner": {
+      "true": {
+        "count": 12,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 488371,
+        "percentage": "100.00"
+      },
+      "total": 488383
+    },
+    "trusted_network": {
+      "true": {
+        "count": 244,
+        "percentage": "0.05"
+      },
+      "false": {
+        "count": 488139,
+        "percentage": "99.95"
+      },
+      "total": 488383
+    },
+    "abuse_velocity": {
+      "low": {
+        "count": 64177,
+        "percentage": "13.14"
+      },
+      "medium": {
+        "count": 59099,
+        "percentage": "12.10"
+      },
+      "high": {
+        "count": 318092,
+        "percentage": "65.13"
+      },
+      "none": {
+        "count": 47015,
+        "percentage": "9.63"
+      },
+      "total": 488383
+    }
+  },
+  "2026-04": {
+    "is_crawler": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 364928,
+        "percentage": "100.00"
+      },
+      "total": 364928
+    },
+    "mobile": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 364928,
+        "percentage": "100.00"
+      },
+      "total": 364928
+    },
+    "proxy": {
+      "true": {
+        "count": 325892,
+        "percentage": "89.30"
+      },
+      "false": {
+        "count": 39036,
+        "percentage": "10.70"
+      },
+      "total": 364928
+    },
+    "vpn": {
+      "true": {
+        "count": 31028,
+        "percentage": "8.50"
+      },
+      "false": {
+        "count": 333900,
+        "percentage": "91.50"
+      },
+      "total": 364928
+    },
+    "tor": {
+      "true": {
+        "count": 18,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 364910,
+        "percentage": "100.00"
+      },
+      "total": 364928
+    },
+    "active_vpn": {
+      "true": {
+        "count": 3067,
+        "percentage": "0.84"
+      },
+      "false": {
+        "count": 361861,
+        "percentage": "99.16"
+      },
+      "total": 364928
+    },
+    "active_tor": {
+      "true": {
+        "count": 0,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 364928,
+        "percentage": "100.00"
+      },
+      "total": 364928
+    },
+    "recent_abuse": {
+      "true": {
+        "count": 345411,
+        "percentage": "94.65"
+      },
+      "false": {
+        "count": 19517,
+        "percentage": "5.35"
+      },
+      "total": 364928
+    },
+    "bot_status": {
+      "true": {
+        "count": 343362,
+        "percentage": "94.09"
+      },
+      "false": {
+        "count": 21566,
+        "percentage": "5.91"
+      },
+      "total": 364928
+    },
+    "shared_connection": {
+      "true": {
+        "count": 276789,
+        "percentage": "75.85"
+      },
+      "false": {
+        "count": 88139,
+        "percentage": "24.15"
+      },
+      "total": 364928
+    },
+    "dynamic_connection": {
+      "true": {
+        "count": 161185,
+        "percentage": "44.17"
+      },
+      "false": {
+        "count": 203743,
+        "percentage": "55.83"
+      },
+      "total": 364928
+    },
+    "frequent_abuser": {
+      "true": {
+        "count": 154545,
+        "percentage": "42.35"
+      },
+      "false": {
+        "count": 210383,
+        "percentage": "57.65"
+      },
+      "total": 364928
+    },
+    "high_risk_attacks": {
+      "true": {
+        "count": 101212,
+        "percentage": "27.73"
+      },
+      "false": {
+        "count": 263716,
+        "percentage": "72.27"
+      },
+      "total": 364928
+    },
+    "security_scanner": {
+      "true": {
+        "count": 2,
+        "percentage": "0.00"
+      },
+      "false": {
+        "count": 364926,
+        "percentage": "100.00"
+      },
+      "total": 364928
+    },
+    "trusted_network": {
+      "true": {
+        "count": 191,
+        "percentage": "0.05"
+      },
+      "false": {
+        "count": 364737,
+        "percentage": "99.95"
+      },
+      "total": 364928
+    },
+    "abuse_velocity": {
+      "low": {
+        "count": 55635,
+        "percentage": "15.25"
+      },
+      "medium": {
+        "count": 42604,
+        "percentage": "11.67"
+      },
+      "high": {
+        "count": 234510,
+        "percentage": "64.26"
+      },
+      "none": {
+        "count": 32179,
+        "percentage": "8.82"
+      },
+      "total": 364928
+    }
+  }
+}
